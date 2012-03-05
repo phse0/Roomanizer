@@ -1,0 +1,70 @@
+\documentclass[10pt,a4paper,titlepage]{article}
+%packages to use
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage[xindy]{glossaries}
+\usepackage[T1]{fontenc}
+
+%preamble
+\pagestyle{fancy}
+\makeglossaries
+
+%glossary entries
+
+%Real Document
+\begin{document}
+
+%Footer/Header Definitions
+\fancyhf{}
+
+\lhead{\leftmark}
+\rhead{Seite \thepage}
+
+%Some Options
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{2}
+
+%Title page
+\title{Pflichtenheft Roomanizer}
+\author{Ramon Lopez \and Rafael Neumann \and Daniel Rotter \and Andreas Sinz \and Philipp Steiner}
+\date{\today}
+\maketitle
+
+%Content
+\tableofcontents
+\newpage
+
+\section{Einführung}
+
+\newpage
+
+\section{Stakeholder- und Benutzerbeschreibung}
+
+\newpage
+
+\section{Produkt Überblick}
+
+\newpage
+
+\section{Domänenmodell}
+
+\newpage
+
+\section{Dynamisches Modell}
+
+\newpage
+
+\section{Nonfunktionale Anforderungen}
+
+\newpage
+
+\section{Iterationsplan (Timeboxes)}
+
+\newpage
+
+%Glossar
+\addcontentsline{toc}{section}{Glossar}
+\printglossary[title=Glossar,toctitle=GLOSSAR]
+\end{document}
