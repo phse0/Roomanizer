@@ -6,12 +6,26 @@
 \usepackage{hyperref}
 \usepackage[xindy]{glossaries}
 \usepackage[T1]{fontenc}
+\usepackage{enumitem}
 
 %preamble
+\newlist{longenum}{enumerate}{6}
+\setlist[longenum,1]{label=\arabic*.}
+\setlist[longenum,2]{label=\alph*)}
+\setlist[longenum,3]{label=\arabic*.}
+\setlist[longenum,4]{label=\alph*)}
+\setlist[longenum,5]{label=\arabic*.}
+\setlist[longenum,6]{label=\alph*)}
 \pagestyle{fancy}
 \makeglossaries
 
 %glossary entries
+\newglossaryentry{Gast}{name=Gast, description={Der Gast ist die Person, die die Leistungen des Hotels in Anspruch nimmt.}}
+\newglossaryentry{Rezeptionist}{name=Rezeptionist, description={Ein Mitarbeiter des Hotels, welcher Personen im Eingangsbereich empfängt, und deren Anfragen bearbeitet.}}
+\newglossaryentry{Reservierung}{name=Reservierung, description={Eine Reservierung ist eine Vormerkung für die Nutzung eines Zimmer für einen gewissen Zeitabschnitt in der Zukunft.}}
+\newglossaryentry{Zimmer}{name=Zimmer, description={In unserem System ist ein Zimmer ein Raum, welcher als Nächtigungsmöglichkeit für Gäste eingerichtet ist.}}
+\newglossaryentry{Reservierungsnummer}{name=Reservierungsnummer, description={Eine Reservierungsnummer ist eine eindeutige Identifikation einer Reservierung.}}
+\newglossaryentry{Checkin}{name=Checkin, description={Der Prozess der abgearbeitet wird, wenn ein Gast an die Rezeption gelangt.}}
 
 %Real Document
 \begin{document}
@@ -24,7 +38,7 @@
 
 %Some Options
 \setcounter{secnumdepth}{5}
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
 
 %Title page
 \title{Pflichtenheft Roomanizer}
@@ -78,6 +92,8 @@
 \newpage
 
 \section{Dynamisches Modell}
+\subsection{Detaillierte Benutzungsfallbeschreibungen}
+\input UseCases/checkin_reservierung
 
 \newpage
 

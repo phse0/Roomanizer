@@ -1,0 +1,96 @@
+\subsubsection{Checkin - Reservierung}
+
+\paragraph{Kurzbeschreibung}
+Eine Person kommt zur Rezeption. Der \Gls{Rezeptionist} gibt nun \Gls{Reservierungsnummer} oder Name der Person ein um die \Gls{Reservierung} im System angezeigt zu bekommen. Die Person weist sich aus, damit der \Gls{Rezeptionist} prüfen kann ob es sich bei der Person um den in der Reservierung erwähnten \Gls{Gast} handelt, und vervollständigt eventuell fehlende Daten. Der \Gls{Rezeptionist} ermittelt das \Gls{Zimmer} für den \Gls{Gast} und verteilt nun noch die Schlüssel und eventuell geforderte Informationen zu Hotel und Umgebung.
+
+\paragraph{Stakeholders und Akteure}
+\begin{itemize}
+	\item \Gls{Rezeptionist} - Schnelle und zuverlässige Bearbeitung des \Gls{Checkin}s, Konzentration auf den \Gls{Gast}, nicht auf den Bildschirm
+	\item \Gls{Gast} - möchte einen reibungslosen, zügigen Ablauf und die vereinbarten Leistungen vorfinden
+\end{itemize}
+
+\paragraph{Vorbedingung}
+\begin{itemize}
+	\item Rezeption muss besetzt sein
+\end{itemize}
+
+\paragraph{Nachbedingung}
+\begin{itemize}
+	\item Der Gast hat den Schlüssel erhalten
+	\item Der Zimmerstatus muss auf Besetzt gesetzt sein
+\end{itemize}
+\paragraph{Basisablauf}
+\begin{enumerate}
+	\item Eine Person kommt zum Schalter und gibt seine \Gls{Reservierungsnummer} an.
+	\item Der \Gls{Rezeptionist} sucht im System anhand der \Gls{Reservierungsnummer} die Reservierung des \Gls{Gast}es.
+	\item Das System zeigt die Reservierungsinformationen an.
+	\item Der \Gls{Rezeptionist} kontrolliert ob die Person der in der \Gls{Reservierung} erwähnte \Gls{Gast} ist.
+	\item Der \Gls{Rezeptionist} überprüft die Vollständigkeit der Reservierungsdaten im System.
+	\item Der \Gls{Rezeptionist} teilt dem System mit, dass dem \Gls{Gast} das \Gls{Zimmer} übergeben wird.
+	\item Der \Gls{Rezeptionist} übergibt dem \Gls{Gast} den Schlüssel und weitere Informationen zu Hotel und Umgebung.
+\end{enumerate}
+
+\paragraph{Alternativer Ablauf}
+\begin{longenum}
+	\item
+	\begin{longenum}
+		\item Die Person kennt ihre \Gls{Reservierungsnummer} nicht:
+		\begin{longenum}
+			\item Die Person gibt stattdessen seinen Namen an.
+			\item Der \Gls{Rezeptionist} sucht die \Gls{Reservierung} im System anhand des Namens.
+			\begin{longenum}
+				\item Das System findet keine \Gls{Reservierung} mit dem angegebenem Namen:
+				\begin{longenum}
+					\item \emph{\Gls{Checkin} abbrechen}
+				\end{longenum}
+			\end{longenum}
+			\item \emph{weiter mit Basisablauf Punkt 3}
+		\end{longenum}
+	\end{longenum}
+	\item
+	\begin{longenum}
+		\item Es existiert keine \Gls{Reservierung} mit der gegebenen \Gls{Reservierungsnummer}:
+		\begin{longenum}
+			\item Die Person gibt stattdessen seinen Namen an.
+			\item Der \Gls{Rezeptionist} sucht die \Gls{Reservierung} im System anhand des Namens.
+			\begin{longenum}
+				\item Das System findet keine \Gls{Reservierung} mit dem angegebenem Namen:
+				\begin{longenum}
+					\item \emph{\Gls{Checkin} abbrechen}
+				\end{longenum}
+			\end{longenum}
+			\item \emph{weiter mit Basisablauf Punkt 3}
+		\end{longenum}
+	\end{longenum}
+	\item
+	\item
+	\begin{longenum}
+		\item Die Person ist nicht der in der \Gls{Reservierung} erwähnte Gast:
+		\begin{longenum}
+			\item Der \Gls{Rezeptionist} überprüft ob die Person eine Vertretung des \Gls{Gast}es ist.
+			\begin{longenum}
+				\item Die Person ist keine Vertretung des \Gls{Gast}es:
+				\begin{longenum}
+					\item \emph{\Gls{Checkin} abbrechen}
+				\end{longenum}
+			\end{longenum}
+		\end{longenum}
+	\end{longenum}
+	\item
+	\begin{longenum}
+		\item Die Daten der \Gls{Reservierung} sind nicht vollständig:
+		\begin{longenum}
+			\item Der \Gls{Rezeptionist} fragt den \Gls{Gast} nach den restlichen Daten, und trägt diese im System ein.
+		\end{longenum}
+	\end{longenum}
+	\item
+	\item
+\end{longenum}
+
+\paragraph{Besondere Anforderungen}
+
+\paragraph{Technologie und Daten Variationsliste}
+
+\paragraph{Benutzerfrequenz}
+sehr hoch
+
