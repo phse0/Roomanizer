@@ -1,7 +1,7 @@
 \subsubsection{Checkin - Reservierung}
 
 \paragraph{Kurzbeschreibung}
-Eine Person kommt zur Rezeption. Der \Gls{Rezeptionist} gibt nun \Gls{Reservierungsnummer} oder Name der Person ein um die \Gls{Reservierung} im System angezeigt zu bekommen. Die Person weist sich aus, damit der \Gls{Rezeptionist} prüfen kann ob es sich bei der Person um den in der Reservierung erwähnten \Gls{Gast} handelt, und vervollständigt eventuell fehlende Daten. Der \Gls{Rezeptionist} ermittelt das \Gls{Zimmer} für den \Gls{Gast} und verteilt nun noch die Schlüssel und eventuell geforderte Informationen zu Hotel und Umgebung.
+Eine Person kommt zur \Gls{Rezeption}. Der \Gls{Rezeptionist} gibt nun \Gls{Reservierungsnummer} oder Name der Person ein um die \Gls{Reservierung} im System angezeigt zu bekommen. Die Person weist sich aus, damit der \Gls{Rezeptionist} prüfen kann ob es sich bei der Person um den in der Reservierung erwähnten \Gls{Gast} handelt, und vervollständigt eventuell fehlende Daten. Der \Gls{Rezeptionist} ermittelt das \Gls{Zimmer} für den \Gls{Gast} und verteilt nun noch die Schlüssel und eventuell geforderte Informationen zu Hotel und Umgebung.
 
 \paragraph{Stakeholders und Akteure}
 \begin{itemize}
@@ -11,7 +11,7 @@ Eine Person kommt zur Rezeption. Der \Gls{Rezeptionist} gibt nun \Gls{Reservieru
 
 \paragraph{Vorbedingung}
 \begin{itemize}
-	\item Rezeption muss besetzt sein
+	\item \Gls{Rezeption} muss besetzt sein
 \end{itemize}
 
 \paragraph{Nachbedingung}
@@ -21,7 +21,7 @@ Eine Person kommt zur Rezeption. Der \Gls{Rezeptionist} gibt nun \Gls{Reservieru
 \end{itemize}
 \paragraph{Basisablauf}
 \begin{enumerate}
-	\item Eine Person kommt zum Schalter und gibt seine \Gls{Reservierungsnummer} an.
+	\item Eine Person kommt zur \Gls{Rezeption} und gibt seine \Gls{Reservierungsnummer} an.
 	\item Der \Gls{Rezeptionist} sucht im System anhand der \Gls{Reservierungsnummer} die Reservierung des \Gls{Gast}es.
 	\item Das System zeigt die Reservierungsinformationen an.
 	\item Der \Gls{Rezeptionist} kontrolliert ob die Person der in der \Gls{Reservierung} erwähnte \Gls{Gast} ist.
@@ -41,7 +41,7 @@ Eine Person kommt zur Rezeption. Der \Gls{Rezeptionist} gibt nun \Gls{Reservieru
 			\begin{longenum}
 				\item Das System findet keine \Gls{Reservierung} mit dem angegebenem Namen:
 				\begin{longenum}
-					\item \emph{\Gls{Checkin} abbrechen}
+					\item \emph{UseCase abbrechen}
 				\end{longenum}
 			\end{longenum}
 			\item \emph{weiter mit Basisablauf Punkt 3}
@@ -56,7 +56,7 @@ Eine Person kommt zur Rezeption. Der \Gls{Rezeptionist} gibt nun \Gls{Reservieru
 			\begin{longenum}
 				\item Das System findet keine \Gls{Reservierung} mit dem angegebenem Namen:
 				\begin{longenum}
-					\item \emph{\Gls{Checkin} abbrechen}
+					\item \emph{UseCase abbrechen}
 				\end{longenum}
 			\end{longenum}
 			\item \emph{weiter mit Basisablauf Punkt 3}
@@ -92,5 +92,7 @@ Eine Person kommt zur Rezeption. Der \Gls{Rezeptionist} gibt nun \Gls{Reservieru
 \paragraph{Technologie und Daten Variationsliste}
 
 \paragraph{Benutzerfrequenz}
-sehr hoch
+mehrmals täglich (sehr hoch)
+
+\newpage
 
