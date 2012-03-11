@@ -1,0 +1,73 @@
+\subsubsection{Zimmer wechseln}
+
+\paragraph{Kurzbeschreibung}
+Ein \Gls{Gast} äußert an der \Gls{Rezeption} den Wunsch, das \Gls{Zimmer} zu wechseln. Der \Gls{Rezeptionist} gibt die Zimmernummer in das System ein, und kann dem \Gls{Gast} ein neues \Gls{Zimmer} zuweisen. Dabei werden alle bisher angefallenen Kosten auf das neue \Gls{Zimmer} übertragen, und sind nur noch auf diesem aufrubar.
+
+\paragraph{Stakeholders und Akteure}
+\begin{itemize}
+	\item Rezeptionist - Schnelle Zuweisung des neuen \Gls{Zimmer}s an den \Gls{Gast}
+	\item Gast - Möglichst schneller Bezug des neuen \Gls{Zimmer}s
+	\item Manager - Grund aus Kundensicht für den \Gls{Zimmer}wechsel
+\end{itemize}
+
+\paragraph{Vorbedingung}
+\begin{itemize}
+	\item Der \Gls{Gast} muss bereits ein Zimmer bezogen haben.
+\end{itemize}
+
+\paragraph{Nachbedingung}
+\begin{itemize}
+	\item Dem \Gls{Gast} muss ein neues Zimmer zugeteilt sein.
+	\item Die bereits bestehenden Rechnungen des \Gls{Gast}es dürfen nur noch auf dem neuen Zimmer aufrufbar sein.
+\end{itemize}
+
+\paragraph{Basisablauf}
+\begin{longenum}
+	\item Der \Gls{Gast} kommt zur \Gls{Rezeption} und gibt seine Zimmernummer an.
+	\item Der \Gls{Rezeptionist} sucht den Gast anhand der Zimmernummer.
+	\item Das System zeigt Informationen zum \Gls{Gast} und \Gls{Zimmer} an.
+	\item Der \Gls{Rezeptionist} teilt dem System mit, dass der \Gls{Gast} das \Gls{Zimmer} wechseln will.
+	\item Das System schlägt dem \Gls{Rezeptionist} \Gls{Zimmer} der gleichen Kategorie, die für die restliche Verweildauer des \Gls{Gast}es vefügbar sind, zum Wechsel vor.
+	\item Der \Gls{Rezeptionist} wählt eines dieser Zimmer für den Wechsel aus.
+	\item Der \Gls{Gast} übergibt dem \Gls{Rezeptionist} die Schlüssel für das alte Zimmer, und erhält im Gegenzug die des nuen Zimmers
+\end{longenum}
+
+\paragraph{Alternativer Ablauf}
+\begin{longenum}
+	\item
+	\item
+	\begin{longenum}
+		\item Der \Gls{Gast} kennt seine Zimmernummer nicht.
+		\begin{longenum}
+			\item Der \Gls{Gast} gibt stattdessen seinen Namen an.
+			\item Der \Gls{Rezeptionist} sucht den Gast anhand des Namens.
+			\item \emph{weiter mit Basisablauf Punkt 3}
+		\end{longenum}
+	\end{longenum}
+	\item
+	\item
+	\item
+	\begin{longenum}
+		\item Es sind keine \Gls{Zimmer} in der selben Kategorie frei:
+		\begin{longenum}
+			\item Das System gibt alle freien \Gls{Zimmer}, die für die restliche Verweildauer des \Gls{Gast}es verfügbar sind, zusammen mit einer Warnung aus.
+			\item Der \Gls{Rezeptionist} wählt eines dieser Zimmer aus, und verhandelt falls notwendig mit dem \Gls{Gast} neue Konditionen aus.
+			\item \emph{weiter mit Basisablauf Punkt 7}
+		\end{longenum}
+		\item Es sind überhaupt keine \Gls{Zimmer} mehr frei:
+		\begin{longenum}
+			\item \emph{UseCase abbrechen}
+		\end{longenum}
+	\end{longenum}
+	\item
+	\item
+\end{longenum}
+
+\paragraph{Besondere Anforderungen}
+
+\paragraph{Technologie und Daten Variationsliste}
+
+\paragraph{Benutzerfrequenz}
+selten
+
+\newpage
