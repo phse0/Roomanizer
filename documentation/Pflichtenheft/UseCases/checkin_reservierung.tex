@@ -26,6 +26,8 @@ Eine Person kommt zur \Gls{Rezeption}. Der \Gls{Rezeptionist} gibt nun \Gls{Rese
 	\item Das System zeigt die Reservierungsinformationen an.
 	\item Der \Gls{Rezeptionist} kontrolliert ob die Person der in der \Gls{Reservierung} erwähnte \Gls{Gast} ist.
 	\item Der \Gls{Rezeptionist} überprüft die Vollständigkeit der Reservierungsdaten im System.
+	\item Das System überprüft ob das \Gls{Zimmer} für die gesamte Aufenhaltsdauer des \Gls{Gast}es verfügbar ist.
+	\item Der \Gls{Rezeptionist} trägt noch die gewünschten \Gls{Zusatzleistung}en des \Gls{Gast}es ein.
 	\item Der \Gls{Rezeptionist} teilt dem System mit, dass dem \Gls{Gast} das \Gls{Zimmer} übergeben wird.
 	\item Der \Gls{Rezeptionist} übergibt dem \Gls{Gast} den Schlüssel und weitere Informationen zu Hotel und Umgebung.
 \end{enumerate}
@@ -81,9 +83,27 @@ Eine Person kommt zur \Gls{Rezeption}. Der \Gls{Rezeptionist} gibt nun \Gls{Rese
 		\item Die Daten der \Gls{Reservierung} sind nicht vollständig:
 		\begin{longenum}
 			\item Der \Gls{Rezeptionist} fragt den \Gls{Gast} nach den restlichen Daten, und trägt diese im System ein.
+			\item \emph{weiter mit Basisablauf Punkt 6}
 		\end{longenum}
 	\end{longenum}
 	\item
+	\begin{longenum}
+		\item Das \Gls{Zimmer} ist nicht für den gesamten Aufenthalt des \Gls{Gast}es verfügbar:
+		\begin{longenum}
+			\item Der \Gls{Rezeptionist} kann einen \Gls{Zimmer}wechsel für einen gewissen Tag vormerken.
+			\item Der \Gls{Gast} wird nur für den verfügbaren Zeitraum eingecheckt.
+			\item \emph{weiter mit Basisablauf Punkt 7}
+		\end{longenum}
+	\end{longenum}
+	\item
+	\item
+	\begin{longenum}
+		\item Der \Gls{Gast} wünscht die Aufteilung der Rechnung auf mehrere \Glspl{Gast}
+		\begin{longenum}
+			\item Der \Gls{Gast} kann für die einzelnen Rechnungen eigene Rechnungsanschriften angeben, oder seine eigene verwenden lassen.
+			\item \emph{weiter mit Basisablauf Punkt 9}
+		\end{longenum}
+	\end{longenum}
 	\item
 \end{longenum}
 
