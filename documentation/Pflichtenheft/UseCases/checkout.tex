@@ -1,0 +1,94 @@
+\subsubsection{Checkout}
+
+\paragraph{Kurzbeschreibung}
+   Ein \Gls{Gast} der ein \Gls{Zimmer} bezogen hat kommt zur Rezeption.
+   Der \Gls{Rezeptionist} sucht die Daten des \Gls{Gast}es. Mit diesen Daten
+   werden sämtliche Arrangements und in Anspruch genommene
+   Leistungen aufgelistet und damit eine \Gls{Zwischenrechnung} erstellt.
+   Dem \Gls{Gast} wird diese ausgehändigt. Nach Kontrolle der
+   \Gls{Zwischenrechnung} wird die Zahlungsart und Modalitäten ausgehandelt.
+   Sobald der \Gls{Gast} die \Gls{Rechnung} beglichen  hat wird eine endgültige
+   Rechnung ausgedruckt und dem \Gls{Gast} übergeben.
+   Nach dem  Bezahlen der \Gls{Rechnung} registriert das System dass der
+   \Gls{Gast} abgereist ist.
+
+\paragraph{Stakeholders und Akteure}
+\begin{itemize}
+	\item \Gls{Rezeptionist} - Schnelle und zuverlässige Bearbeitung des
+	\Gls{Checkout}s, Konzentration auf den \Gls{Gast}, nicht auf den Bildschirm
+	\item \Gls{Gast} - möchte einen reibungslosen, zügigen Ablauf und so schnell
+	wie möglich abreisen
+\end{itemize}
+
+\paragraph{Vorbedingung}
+\begin{itemize}
+	\item Gast muss im System eingecheckt sein
+\end{itemize}
+
+\paragraph{Nachbedingung}
+\begin{itemize}
+	\item Der Gast hat den Schlüssel abgegeben
+	\item Der Gast hat die Rechnung beglichen
+	\item Das Zimmer muss im System wieder als frei markiert sein
+\end{itemize}
+
+\paragraph{Basisablauf}
+\begin{enumerate}
+	\item Eine Person kommt zum \Gls{Rezeption} und gibt seine \Gls{Zimmernummer} an.
+	\item Der \Gls{Rezeptionist} sucht im System anhand der \Gls{Zimmernummer} die Reservierung des \Gls{Gast}es.
+	\item Das System zeigt die in Anspruch genommene Leistungen an.
+    \item Das System erstellt eine \Gls{Zwischenrechnung}.
+	\item Der \Gls{Gast} kontrolliert die \Gls{Zwischenrechnung}.
+	\item Der \Gls{Gast} bezahlt die \Gls{Zwischenrechnung}.
+	\item Der \Gls{Gast} erhält vom System die endgültige \Gls{Rechnung}.
+	\item Die endgültige \Gls{Rechnung} wird ausgedruckt.
+	\item Der \Gls{Rezeptionist} teilt dem System mit, dass der \Gls{Gast} wieder abgereist ist.
+	\item Der \Gls{Gast} gibt den Schlüssel ab.
+\end{enumerate}
+
+\paragraph{Alternativer Ablauf}
+\begin{longenum}
+	\item
+	\begin{longenum}
+		\item Der \Gls{Gast} kennt seine \Gls{Zimmernummer} nicht:
+		\begin{longenum}
+			\item Die Person gibt stattdessen seinen Namen an.
+			\item Der \Gls{Rezeptionist} sucht die \Gls{Zimmernummer} im System anhand des	Namens.
+			\item \emph{weiter mit Basisablauf Punkt 3}
+		\end{longenum}
+	\end{longenum}
+	\item
+	\item
+	\item
+	\item
+	\begin{longenum}
+		\item Der \Gls{Gast} ist mit der \Gls{Zwischenrechnung} nicht einverstanden:
+	\end{longenum}
+	\item
+	\item
+	\item
+	\item
+	\item
+	\begin{longenum}
+		\item Der \Gls{Gast} hat den Zimmerschlüssel verloren:
+		\begin{longenum}
+			\item Der \Gls{Rezeptionist} teilt dem System den Verlust des Schlüssels mit.
+			\item Der \Gls{Gast} muss eine Entschädigung für den Verlust leisten.
+		\end{longenum}
+	\end{longenum}
+\end{longenum}
+
+\paragraph{Besondere Anforderungen}
+
+\paragraph{Technologie und Daten Variationsliste}
+
+\paragraph{Benutzerfrequenz}
+mehrmals täglich (sehr hoch)
+
+\paragraph{Offene Punkte}
+\begin{itemize}
+	\item Sind Arrangement das gleiche wie Leistungen?
+	\item Vorgehen bei Nichtbezahlen der Zwischenrechnung
+\end{itemize}
+
+\newpage
