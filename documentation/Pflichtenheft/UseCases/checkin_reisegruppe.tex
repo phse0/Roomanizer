@@ -1,0 +1,85 @@
+\subsubsection{Checkin - Reisegruppe}
+
+\paragraph{Kurzbeschreibung}
+Der \Gls{Reiseleiter} kommt zur \Gls{Rezeption} und meldet die Ankunft seiner Reisegruppe. Die \Gls{Reservierung} liegt im System unter dem Namen des \Gls{Reiseleiter}s vor. Nun kann der \Gls{Reiseleiter} die Daten aller Reisegruppenmitglieder angeben, damit sie erfasst werden können.
+Dann werden die Zimmer auf die Mitglieder der Reisegruppe aufgeteilt. Der Rezeptionist verteilt nun noch die Schlüssel und eventuell geforderte Informationen zu Hotel und Umgebung.
+
+\paragraph{Stakeholders und Akteure}
+\begin{itemize}
+	\item \Gls{Rezeptionist} - Schnelle und zuverlässige Bearbeitung des \Gls{Checkin}s, Konzentration auf den  \Gls{Reiseleiter}, nicht auf den Bildschirm
+	\item \Gls{Reiseleiter} - Reibungsloser Ablauf und schnelle Bearbeitung, um die Mitglieder der Reisegruppe nicht zu lange warten zu lassen
+	\item \Glspl{Gast} - Reibungsloser Ablauf und schnelle Bearbeitung, schneller Bezug der \Gls{Zimmer}
+\end{itemize}
+
+\paragraph{Vorbedingung}
+
+\paragraph{Nachbedingung}
+\begin{itemize}
+	\item Alle der Reisegruppe zugeordneten \Gls{Zimmer} wurden erfolgreich den \Glspl{Gast}n zugeteilt.
+\end{itemize}
+
+\paragraph{Basisablauf}
+\begin{enumerate}
+	\item Ein \Gls{Reiseleiter} kommt zur \Gls{Rezeption} und gibt seine \Gls{Reservierungsnummer} an.
+	\item Der \Gls{Rezeptionist} sucht im System anhand der \Gls{Reservierungsnummer} die \Gls{Reservierung} des \Gls{Gast}es.
+	\item Das System zeigt die Reservierungsinformationen an.
+	\item Der \Gls{Rezeptionist} überprüft die Vollständigkeit der Reservierungsdaten im System.
+	\item Der \Gls{Rezeptionist} trägt noch die gewünschten \Gls{Zusatzleistung}en der Reisegruppe ein.
+	\item Der \Gls{Rezeptionist} teilt dem System mit, dass dem \Gls{Gast} das \Gls{Zimmer} übergeben wird.
+	\item Der \Gls{Rezeptionist} übergibt dem Reiseleiter die Schlüssel und weitere Informationen zu Hotel und Umgebung.
+\end{enumerate}
+
+\paragraph{Alternativer Ablauf}
+\begin{longenum}
+	\item
+	\begin{longenum}
+		\item Der Reiseleiter gibt stattdessen seinen Namen an:
+		\item Der \Gls{Rezeptionist} sucht die \Gls{Reservierung} im System anhand des Namens.
+		\begin{longenum}
+			\item Das System findet keine \Gls{Reservierung} mit dem angegebenem Namen:
+			\begin{longenum}
+				\item \emph{UseCase abbrechen}
+			\end{longenum}
+		\end{longenum}
+		\item \emph{weiter mit Basisablauf Punkt 3}
+	\end{longenum}
+	\item
+	\begin{longenum}
+		\item Es existiert keine \Gls{Reservierung} mit der gegebenen \Gls{Reservierungsnummer}:
+		\item Der \Gls{Rezeptionist} sucht die \Gls{Reservierung} im System anhand des Namens.
+		\begin{longenum}
+			\item Das System findet keine \Gls{Reservierung} mit dem angegebenem Namen:
+			\begin{longenum}
+				\item \emph{UseCase abbrechen}
+			\end{longenum}
+		\end{longenum}
+		\item \emph{weiter mit Basisablauf Punkt 3}
+	\end{longenum}
+	\item
+	\item
+	\begin{longenum}
+		\item Die Daten der \Gls{Reservierung} sind nicht vollständig:
+		\begin{longenum}
+			\item Der \Gls{Rezeptionist} fragt den \Gls{Gast} nach den restlichen Daten, und trägt diese im System ein.
+			\item \emph{weiter mit Basisablauf Punkt 5}
+		\end{longenum}
+	\end{longenum}
+	\item
+	\item
+	\item
+\end{longenum}
+
+\paragraph{Besondere Anforderungen}
+
+\paragraph{Technologie und Daten Variationsliste}
+
+\paragraph{Benutzerfrequenz}
+mehrmals wöchentlich (relativ häufig)
+
+\paragraph{Offene Punkte}
+\begin{itemize}
+	\item Umgang mit Überbuchungen
+\end{itemize}
+
+\newpage
+
