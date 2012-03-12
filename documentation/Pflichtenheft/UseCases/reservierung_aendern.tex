@@ -1,0 +1,69 @@
+\subsubsection{Reservierung ändern}
+
+\paragraph{Kurzbeschreibung}
+Der \Gls{Rezeptionist} sucht mit dem System nach der \Gls{Reservierung} anhand der Reservierungsdaten. Das System listet die \Gls{Reservierung}(en) auf,  der \Gls{Rezeptionist} wählt die zu ändernde \Gls{Reservierung} aus. Der \Gls{Rezeptionist} kann jetzt über das System die veränderbaren Daten der \Gls{Reservierung} bearbeiten, das System zeigt dabei auch eine \Gls{Belegungsvorschau} an. Bei einer Preisänderung muss das System prüfen ob der \Gls{Rezeptionist} dazu berechtigt ist. Nach der erfolgten Änderung speichert das System diese Änderung der \Gls{Reservierung}.
+
+\paragraph{Stakeholders und Akteure}
+\begin{itemize}
+	\item \Gls{Rezeptionist} - Schnell die Reservierung aktualisieren
+	\item \Glspl{Gast} - Änderungen sollen zuverlässig bearbeitet werden.
+\end{itemize}
+
+\paragraph{Vorbedingung}
+\begin{itemize}
+	\item Die Reservierung muss bereits existieren
+\end{itemize}
+
+\paragraph{Nachbedingung}
+\begin{itemize}
+	\item Die Daten der Reservierung sollen wie gewünscht geändert worden sein
+\end{itemize}
+
+\paragraph{Basisablauf}
+\begin{enumerate}
+	\item Der \Gls{Rezeptionist} sucht im System anhand der \Gls{Reservierungsnummer} die \Gls{Reservierung}.
+	\item Das System zeigt die gewünschte \Gls{Reservierung} mit einer Belegungsvorschau an.
+	\item Der \Gls{Rezeptionist} bearbeitet die Daten der Reservierung.
+	\item Der \Gls{Rezeptionist} speichert die Änderungen im System.
+\end{enumerate}
+
+\paragraph{Alternativer Ablauf}
+\begin{longenum}
+	\item
+	\begin{longenum}
+		\item Der Rezeptionist kennt die \Gls{Reservierungsnummer} nicht:
+		\begin{longenum}
+			\item Der \Gls{Rezeptionist} sucht im System anhand alternativer Reservierungsdaten nach der \Gls{Reservierung}.
+			\item Das System gibt eine gefilterte Menge der \Gls{Reservierung}en zurück.
+			\begin{longenum}
+				\item Der \Gls{Rezeptionist} kann die gesuchte Reservierung nicht finden:
+				\begin{longenum}
+					\item \emph{UseCase abbrechen}
+				\end{longenum}
+			\end{longenum}
+			\item Der \Gls{Rezeptionist} wählt die gewünschte Reservierung zur Bearbeitung aus.
+			\item \emph{weiter mit Basisablauf Punkt 2}
+		\end{longenum}
+	\end{longenum}
+	\item
+	\item
+	\begin{longenum}
+		\item Der \Gls{Rezeptionist} hat nicht die notwendigen Berechtigungen um die Reservierung zu bearbeiten.
+		\begin{longenum}
+			\item \emph{UseCase abbrechen}
+		\end{longenum}
+	\end{longenum}
+	\item
+\end{longenum}
+
+\paragraph{Besondere Anforderungen}
+
+\paragraph{Technologie und Daten Variationsliste}
+
+\paragraph{Benutzerfrequenz}
+mittel bis selten
+
+\paragraph{Offene Punkte}
+
+\newpage
+
