@@ -1,0 +1,83 @@
+\subsubsection{Reservierung aufnehmen - Individualgast}
+
+\paragraph{Kurzbeschreibung}
+Eine Person tritt in Kontakt mit dem Hotel und will ein \Gls{Zimmer} reservieren. Der Mitarbeiter gibt die Daten der Person im System ein. Die Person gibt dann die gewünschte Kategorie bzw. die Zimmernummer und den Zeitraum an. Es wird geprüft ob in diesem Zeitraum und der Kategorie ein bzw. das \Gls{Zimmer} verfügbar wäre. Dann wird die Person über den Preis, welcher den momentanen Listenpreisen entnommen wird, und die verfügbaren \Gls{Zusatzleistung}en informiert. Danach wird ein \Gls{Optionsdatum} mit der Person vereinbart. Der Mitarbeiter trägt daraufhin die Reservierung im System ein und teilt der Person die \Gls{Reservierungsnummer} mit.
+
+\paragraph{Stakeholders und Akteure}
+\begin{itemize}
+	\item \Gls{Rezeptionist} - Schnelle und zuverlässige Bearbeitung der
+	\Gls{Reservierung}, Konzentration auf die Person, nicht auf den Bildschirm
+	\item Person - Reibungsloser, zügiger Ablauf und Erhalten der Reservierungsnummer 
+\end{itemize}
+
+\paragraph{Vorbedingung}
+\begin{itemize}
+	\item Allgemeine Vorbedingungen
+\end{itemize}
+
+\paragraph{Nachbedingung}
+\begin{itemize}
+	\item Die Person muss eine Reservierungsnummer erhalten haben
+\end{itemize}
+
+\paragraph{Basisablauf}
+\begin{enumerate}
+	\item Eine Person tritt mit dem Hotel in Kontakt.
+	\item Der \Gls{Rezeptionist} gibt die Daten der Person in das System ein.
+	\item Die Person gibt die gewünschte Zimmerkategorie und einen bestimmten Zeitraum für ihren Aufenthalt an. 
+    \item Der \Gls{Rezeptionist} prüft ob im System ein Zimmer der gwünschten Kategorie für den bestimmten Zeitraum vorhanden ist. 
+	\item Der \Gls{Rezeptionist} teilt der Person den Listenpreis mit.
+	\item Die Person akzeptiert den Preis, welcher dann ins System eingetragen wird.
+	\item Der \Gls{Rezeptionist} trägt die gewünschten \Gls{Zusatzleistung}en der Person ein.
+	\item Der \Gls{Rezeptionist} teilt der Person das \Gls{Optionsdatum} und die \Gls{Reservierungsnummer} mit.
+\end{enumerate}
+
+\paragraph{Alternativer Ablauf}
+\begin{longenum}
+	\item
+	\item
+	\item
+	\begin{longenum}
+			\item Die Person gibt statt der Zimmerkategorie ihre gewünschte Zimmernummer an:
+			\begin{longenum}
+				\item Der Rezeptionist überprüft, ob das entsprechende Zimmer für den gewünschten Zeitraum frei ist.
+				\begin{longenum}
+					\item Das Zimmer ist nicht frei:
+					\begin{longenum}
+						\item Der Rezeptionist sucht im System ein Zimmer mit der selben Kategorie.
+						\item \emph{weiter mit Basisablauf Punkt 5}
+					\end{longenum}
+				\end{longenum}
+
+				\item \emph{weiter mit Basisablauf Punkt 5}
+			\end{longenum}
+				
+	\end{longenum}
+	\item
+	\begin{longenum}
+		\item In dem gewünschten Zeitraum ist kein Zimmer in der gewünschten Kategorie frei.
+		\begin{longenum}
+			\item Das System schlägt ein Zimmer in einer anderen Kategorie vor:
+			\begin{longenum}
+				\item Gar kein Zimmer ist frei
+				\begin{longenum}
+					\item \emph{Usecase abbrechen}
+				\end{longenum}
+			\end{longenum}
+			\item \emph{weiter mit Basisablauf Punkt 5}
+		\end{longenum}
+	\end{longenum}
+	\item
+	\item
+	\item
+	\item
+\end{longenum}
+
+\paragraph{Besondere Anforderungen}
+
+\paragraph{Technologie und Daten Variationsliste}
+
+\paragraph{Benutzerfrequenz}
+sehr hoch
+
+\newpage
