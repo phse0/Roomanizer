@@ -2,7 +2,7 @@
 
 \paragraph{Kurzbeschreibung}
 Der \Gls{Reiseleiter} kommt zur \Gls{Rezeption} und meldet die Ankunft seiner Reisegruppe. Die \Gls{Reservierung} liegt im System unter dem Namen des \Gls{Reiseleiter}s vor. Nun kann der \Gls{Reiseleiter} die Daten aller Reisegruppenmitglieder angeben, damit sie erfasst werden können.
-Dann werden die Zimmer auf die Mitglieder der Reisegruppe aufgeteilt. Der Rezeptionist verteilt nun noch die Schlüssel und eventuell geforderte Informationen zu Hotel und Umgebung.
+Dann werden die Zimmer auf die Mitglieder der Reisegruppe aufgeteilt. Der Rezeptionist verteilt noch die Schlüssel und eventuell geforderte Informationen zu Hotel und Umgebung.
 
 \paragraph{Stakeholders und Akteure}
 \begin{itemize}
@@ -12,6 +12,9 @@ Dann werden die Zimmer auf die Mitglieder der Reisegruppe aufgeteilt. Der Rezept
 \end{itemize}
 
 \paragraph{Vorbedingung}
+\begin{itemize}
+	\item Allgemeine Vorbedingungen
+\end{itemize}
 
 \paragraph{Nachbedingung}
 \begin{itemize}
@@ -33,15 +36,18 @@ Dann werden die Zimmer auf die Mitglieder der Reisegruppe aufgeteilt. Der Rezept
 \begin{longenum}
 	\item
 	\begin{longenum}
-		\item Der Reiseleiter gibt stattdessen seinen Namen an:
-		\item Der \Gls{Rezeptionist} sucht die \Gls{Reservierung} im System anhand des Namens.
+		\item Der \Gls{Reiseleiter} kennt die Reservierungsnummer nicht:
 		\begin{longenum}
-			\item Das System findet keine \Gls{Reservierung} mit dem angegebenem Namen:
+			\item Der Reiseleiter gibt stattdessen seinen Namen an:
+			\item Der \Gls{Rezeptionist} sucht die \Gls{Reservierung} im System anhand des Namens und des Datums.
 			\begin{longenum}
-				\item \emph{UseCase abbrechen}
+				\item Das System findet keine \Gls{Reservierung} mit dem angegebenem Namen:
+				\begin{longenum}
+					\item \emph{UseCase abbrechen}
+				\end{longenum}
 			\end{longenum}
+			\item \emph{weiter mit Basisablauf Punkt 3}
 		\end{longenum}
-		\item \emph{weiter mit Basisablauf Punkt 3}
 	\end{longenum}
 	\item
 	\begin{longenum}
@@ -60,7 +66,7 @@ Dann werden die Zimmer auf die Mitglieder der Reisegruppe aufgeteilt. Der Rezept
 	\begin{longenum}
 		\item Die Daten der \Gls{Reservierung} sind nicht vollständig:
 		\begin{longenum}
-			\item Der \Gls{Rezeptionist} fragt den \Gls{Gast} nach den restlichen Daten, und trägt diese im System ein.
+			\item Der \Gls{Rezeptionist} fragt den \Gls{Reiseleiter} nach den restlichen Daten, und trägt diese im System ein.
 			\item \emph{weiter mit Basisablauf Punkt 5}
 		\end{longenum}
 	\end{longenum}
@@ -79,6 +85,7 @@ mehrmals wöchentlich (relativ häufig)
 \paragraph{Offene Punkte}
 \begin{itemize}
 	\item Umgang mit Überbuchungen
+	\item Ungereinigte Zimmer
 \end{itemize}
 
 \newpage
