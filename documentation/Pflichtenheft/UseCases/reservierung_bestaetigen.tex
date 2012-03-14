@@ -1,0 +1,72 @@
+\subsubsection{Reservierung bestätigen}
+
+\paragraph{Kurzbeschreibung}
+Nachdem der \Gls{Gast} seine \Gls{Reservierung} bestätigt hat, sucht der \Gls{Rezeptionist} mit dem System nach der \Gls{Reservierung}. Das System listet die \Gls{Reservierung}(en) auf, der \Gls{Rezeptionist} wählt die \Gls{Reservierung} die bestätigt werden soll. Das System bestätigt die gewählte \Gls{Reservierung} und druckt die Reservierungsbestätigung für das Hotel aus. Das System gibt auch eine Version der Reservierungsbestätigung für den \Gls{Gast} aus, die für den \Gls{Gast} relevante Daten enthält.
+
+\paragraph{Stakeholders und Akteure}
+\begin{itemize}
+	\item \Gls{Rezeptionist} - Schnell die Reservierung bestätigen
+	\item \Gls{Gast} - Rechtlich verbindliche Zusage der Reservierung
+\end{itemize}
+
+\paragraph{Vorbedingung}
+\begin{itemize}
+	\item Die Reservierung muss bereits existieren
+\end{itemize}
+
+\paragraph{Nachbedingung}
+\begin{itemize}
+	\item Die \Gls{Reservierung} muss bestätigt sein
+	\item Der \Gls{Gast} muss eine Bestätigung erhalten haben
+\end{itemize}
+
+\paragraph{Basisablauf}
+\begin{enumerate}
+	\item Der \Gls{Rezeptionist} sucht im System anhand der \Gls{Reservierungsnummer} die \Gls{Reservierung}.
+	\item Das System zeigt die gewünschte \Gls{Reservierung} mit einer Belegungsvorschau an.
+	\item Der \Gls{Rezeptionist} bestätigt die dargestellte \Gls{Reservierung}.
+	\item Das System druckt die Reservierungsbestätigung für das Hotel aus.
+	\item Das System stellt eine zweite Reservierungsbestätigung mit den Information für den \Gls{Gast} bereit.
+\end{enumerate}
+
+\paragraph{Alternativer Ablauf}
+\begin{longenum}
+	\item
+	\begin{longenum}
+		\item Der Rezeptionist kennt die \Gls{Reservierungsnummer} nicht:
+		\begin{longenum}
+			\item Der \Gls{Rezeptionist} sucht im System anhand alternativer Reservierungsdaten nach der \Gls{Reservierung}.
+			\item Das System gibt eine gefilterte Menge der \Gls{Reservierung}en zurück.
+			\begin{longenum}
+				\item Der \Gls{Rezeptionist} kann die gesuchte Reservierung nicht finden:
+				\begin{longenum}
+					\item \emph{UseCase abbrechen}
+				\end{longenum}
+			\end{longenum}
+			\item Der \Gls{Rezeptionist} wählt die gewünschte Reservierung zur Bestätigung aus.
+			\item \emph{weiter mit Basisablauf Punkt 2}
+		\end{longenum}
+	\end{longenum}
+	\item
+	\item
+	\begin{longenum}
+		\item Der \Gls{Rezeptionist} hat nicht die notwendigen Berechtigungen um die Reservierung zu bearbeiten.
+		\begin{longenum}
+			\item \emph{UseCase abbrechen}
+		\end{longenum}
+	\end{longenum}
+	\item
+	\item
+\end{longenum}
+
+\paragraph{Besondere Anforderungen}
+
+\paragraph{Technologie und Daten Variationsliste}
+
+\paragraph{Benutzerfrequenz}
+sehr hoch
+
+\paragraph{Offene Punkte}
+
+\newpage
+

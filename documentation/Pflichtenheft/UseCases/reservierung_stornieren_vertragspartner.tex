@@ -1,0 +1,66 @@
+\subsubsection{Reservierung stornieren - Vertragspartner}
+
+\paragraph{Kurzbeschreibung}
+Der \Gls{Vertragspartner} nimmt Kontakt mit der \Gls{Rezeption} auf. Der \Gls{Vertragspartner} gibt die Daten der zu stornierenden Reservierung an. Der \Gls{Rezeptionist} sucht die entsprechende \Gls{Reservierung}. Er teilt dem \Gls{Vertragspartner} die getroffenen Vereinbarungen mit. Dieser ist damit einverstanden und der \Gls{Rezeptionist} storniert die \Gls{Reservierung}.
+
+\paragraph{Stakeholders und Akteure}
+\begin{itemize}
+\item \Gls{Rezeptionist} - Einfache und schnelle Stornierung von Reservierungen
+\item \Gls{Vertragspartner} - Reibungsloses stornieren von Reservierungen
+\end{itemize}
+
+\paragraph{Vorbedingung}
+\begin{itemize}
+\item Allgemeine Vorbedingungen
+\item Es besteht eine \Gls{Reservierung} von diesem \Gls{Vertragspartner}
+\end{itemize}
+
+\paragraph{Nachbedingung}
+\begin{itemize}
+\item Die \Gls{Reservierung} wurde storniert.
+\end{itemize}
+
+\paragraph{Basisablauf}
+\begin{enumerate}
+\item Ein \Gls{Vertragspartner} nimmt Kontakt mit der \Gls{Rezeption} auf und gibt seine \Gls{Reservierungsnummer} an.
+\item Der \Gls{Rezeptionist} sucht im System anhand der \Gls{Reservierungsnummer} die \Gls{Reservierung}.
+\item Das System zeigt die Reservierungsinformationen an.
+\item Der \Gls{Rezeptionist} teilt dem \Gls{Vertragspartner} die bereits angefallenen Kosten laut Vertrag mit.
+\item Der \Gls{Vertragspartner} begleicht die angefallenen Kosten.
+\item Der \Gls{Rezeptionist} storniert die Reservierung des \Gls{Vertragspartner}s.
+\end{enumerate}
+
+\paragraph{Alternativer Ablauf}
+\begin{longenum}
+	\item
+	\begin{longenum}
+		\item Der \Gls{Vertragspartner} kennt die \Gls{Reservierungsnummer} nicht:
+		\begin{longenum}
+			\item Der \Gls{Vertragspartner} gibt stattdessen den Namen der Firma an.
+			\item Der \Gls{Rezeptionist} sucht die \Gls{Reservierung} im System anhand des Namens der Firma.
+			\begin{longenum}
+				\item Das System findet keine \Gls{Reservierung} unter dem angegebenem Namen:
+				\begin{longenum}
+					\item \emph{UseCase abbrechen}
+				\end{longenum}
+			\end{longenum}
+			\item \emph{weiter mit Basisablauf Punkt 3}
+		\end{longenum}
+	\end{longenum}
+	
+	\item
+	\item
+	\item
+	\item
+\end{longenum}
+
+\paragraph{Besondere Anforderungen}
+
+\paragraph{Technologie und Daten Variationsliste}
+
+\paragraph{Benutzerfrequenz}
+selten
+
+\paragraph{Offene Punkte}
+
+\newpage
