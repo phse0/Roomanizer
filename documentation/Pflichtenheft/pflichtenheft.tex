@@ -75,10 +75,8 @@ folgende Funktion anbietet:
 	\item Protokollierung
 	\item Statistiken
 \end{itemize}
-
 \subsection{Zweck}
  Das Pflichtenheft beschreibt alle Anforderung welche im Roomanizer enthalten sein müssen. Bei fertigstellung des Systems wird jede hier definierte Anforderung von der Software bereitgestellt.
-
 \subsection{Umfang}
 Das Pfichtenheft umfasst alle Arbeitsprozesse welche vom System unterstützt werden. 
 Die Arbeitsprozesse sind in zwei Gruppen eingeordnet:
@@ -87,7 +85,6 @@ Die Arbeitsprozesse sind in zwei Gruppen eingeordnet:
 \item Back-Office, es umfasst alle Abläufe die nicht direkt mit dem physischen Gast zu tun haben.
 \end{enumerate}
 Die Prozesse werden schriftlich und mit Hilfe von Diagrammen dargestellt.
-
 \subsection{Referenzen}
 \begin{itemize}
 	\item Projektbeschreibung Projekt Hotel (Roomanizer) 
@@ -105,7 +102,6 @@ Dieses Document umfasst folgende Bereiche:
 \newpage
 
 \section{Stakeholder- und Benutzerbeschreibung}
-
 \subsection{Stakeholder\slash{}Benutzer Zusammenfassung}
 \begin{tabular}{|l|p{4cm}|p{4cm}|}
     \hline
@@ -175,7 +171,24 @@ Zufriedenheit des Auftraggebers bezüglich dem erstellten Produkt.\\
 
 \newpage
 
-\section{Nonfunktionale Anforderungen}
+\section{Nichtfunktionale Anforderungen}
+\subsection{Regeln}
+\subsection{Usability}
+Natürlich wird versucht die Software selbsterklärend zu gestalten, trotzdem inkludiert das Projekt eine fortlaufende Dokumentation, sowie eine Hilfe, die die Einarbeitungszeit wesentlich verringern soll.
+\subsection{Zuverlässigkeit}
+Die Datenbank, auf der das System arbeitet, sollte sich immer einen konsistenten Zustand merken, damit im Fehlerfall ein einfacher Neustart des Systems zur Behebung ausreicht. Trotzdem sollten am besten noch automatisiert Backups erstellt werden, um die Wahrscheinlichkeit eines zu großen Datenverlusts zu begrenzen.
+\subsection{Performanz}
+Es ist für die Zufriedenheit des Kunden, und somit auch für den \Gls{Rezeptionist}, äußerst wichtig dass oft vorkommende Tätigkeiten schnell abgehandelt werden können. Dazu zählen vor allem der \Gls{Checkin}, und der \Gls{Checkout}, welche, insofern keine Daten nachzutragen bzw. andere Zusatzaufwände zu erledigen sind, nicht länger als 2 Minuten dauern sollten.
+
+Außerdem ist die ständige Verfügbarkeit des Systems von großer Bedeutung, damit Anfragen von Kunden bzw. Gästen sofort bearbeitet werden können. Sollte die Verfügbarkeit für einen gewissen Zeitraum nicht gegeben sein, z.B. wegen Wartungsarbeiten, dann muss dieser Ausfall bereits im Vorherein kommuniziert werden, sodass das Persoal sich auf diese unangenehme Situation vorbereiten kann.
+\subsection{Unterstützbarkeit}
+\subsection{Schnittstellen}
+\subsubsection{Benutzerschnittstellen}
+Die Software wird vom Benutzer über eine grafische Benutzeroberfläche auf handelsüblichen Desktoprechnern bedient.
+\subsubsection{Software Schnittstellen}
+Es sind Schnittstellen zu den bestehenden Systemen (Finanzbuchhaltung, Debitorenbuchhaltung, Food and Beverage Verwaltung) vorzusehen.
+\subsubsection{Kommunikationsschnittstellen}
+Es ist nicht vorgesehen, dass das System von jedem Mitarbeiter des Hotels zu bedienen ist, da es gerade bei Mitarbeiter in Positionen mit hoher Fluktuation zu teuer wäre, jeden einzelnen dem Umgang mit der Software zu erläutern. Daher werden immer noch diverse Formulare existieren, die von gewissen Berufsgruppen (z.B. Reinigungspersonal) ausgefüllt, und danach von Mitarbeitern im Backoffice manuell ins System übertragen werden.
 
 \newpage
 
