@@ -148,15 +148,83 @@ Zufriedenheit des Auftraggebers bezüglich dem erstellten Produkt.\\
 \newpage
 
 \section{Produkt Überblick}
+\subsection{Zusammenfassung Produktfähigkeiten}
+\begin{tabular}{|p{5.7cm}|p{5.7cm}|}
+	\hline
+	\textbf{Produktfähigkeit} &
+	\textbf{Stakeholder Nutzen}
+	\\
+	\hline
+	Zimmerreservierung &
+	Höhere Effizienz des Front- und Backoffice
+	\\
+	\hline
+	Check-In &
+	Schnell und komfortabel für Gast und Frontoffice
+	\\
+	\hline
+	Automatisierte Rechnungslegung &
+	Rechnungen sind vor Checkout schon gestellt, Vorgagng wird stark beschleunigt
+	\\
+	\hline
+	Verschiedenste Operationen mit Rechnungen (Zwischenrechnung, Rechnungsteilung, Zahlarten usw.) &
+	Flexibler Umgang, kommt Kunden entgegen und ist trotzdem einfach zu bedienen für Frontoffice
+	\\
+	\hline
+	Checkout &
+	Schnell und komfortabel für Gast und Frontoffice
+	\\
+	\hline
+	Kontingentverwaltung für Reisebüros &
+	Backoffice kann verschiedenste Vertragskonditionen für Reisebüros erstellen und Kontingente effektive nutzen
+	\\
+	\hline
+	Vertragspartnerverwaltung &
+	Backoffice kann verschiedenste Vertragskonditionen für Reisebüros erstellen und Kontingente effektiv nutzen
+	\\
+	\hline
+	Berechtigungssystem &
+	Teile der Applikation sind aus Sicherheits- und Diskretionsgründen nur Angestellten ab einer bestimmten Berechtigungsstufe verfügbar
+	\\
+	\hline
+	Log-System &
+	Alle Vorgänge in der Hotelapplikationen werden unter verschiedensten Gesichtspunkten aufgezeichnet
+	\\
+	\hline
+	Statistiken &
+	Backoffice und Management können auf Basis der Log-System aufschlussreiche Statistiken und Report erstellen die in weiterer Folge den Betrieb optimieren
+	\\
+	\hline
+\end{tabular}
 
 \newpage
 
 \section{Domänenmodell}
+\subsection{Überblick}
+\subsection{Detailliertes Modell}
+\subsubsection{Gast}
+Beim Gast meint man eine Person welche im Hotel Leistungen bezieht. In ihr ist unter anderem der Name und die Anschrift der Person festgehalten.
+\subsubsection{Reservierung}
+Eine Reservierung besteht aus verschiedenen Reservierungspositionen, welche eine Zimmerkategorie und eine Menge enthalten. Dazu wird noch der Kunde gespeichert, welcher die Resevierung getätigt hat.
+\subsubsection{Vertragspartner}
+Beim Vertragspartner handelt es sich um eine spezielle Form eines Kunden. Er hat einen Vertrag mit dem Hotel abgeschlossen und erhält spezielle Konditionen. Die Vertragspartner werden unterteilt in Firmen und Reisebüros.
+\subsubsection{Kontingent}
+Bei dem Kontingent handelt es sich um eine spezielle Art von Reservierung die nur für Reisebüros verwendet werden. Für sie gelten spezielle Regelungen und werden deshalb getrennt verwaltet.
+\subsubsection{Zimmer}
+Das Hotelzimmer ist ein Raum den ein Kunde gegen Bezahlung in Anspruch nehmen kann.
+\subsubsection{Zimmerstatus}
+Der Zimmerstatus beschreibt in welcher Lage sich das Zimmer im aktuellen Moment befindet.
+\subsubsection{Kunde}
+Der Kunde ist die Instanz die in direkten Zusammenhang mit einer Rechnung steht.
+Einem Kunden ist eindeutig eine Rechnung zuzuordnen.
+\subsubsection{Rechnung}
+Eine Rechnung wird erstellt und durch ein Zahlungsmittel beglichen, dann gilt die Rechnung als abgeschlossen. Eine Rechnung hat folgende Bestandteile.
 
 \newpage
 
 \section{Dynamisches Modell}
 \subsection{Detaillierte Benutzungsfallbeschreibungen}
+\input UseCases/checkin_walkin
 \input UseCases/checkin_reisegruppe
 \input UseCases/checkin_reservierung
 \input UseCases/checkout
