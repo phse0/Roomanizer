@@ -220,19 +220,53 @@ Der Akteur wählt den aktuellen Aufenthalt des betreffenden Gastes aus und kann 
 Beim Gast meint man eine Person welche im Hotel Leistungen bezieht. In ihr ist unter anderem der Name und die Anschrift der Person festgehalten.
 \subsubsection{Reservierung}
 Eine Reservierung besteht aus verschiedenen Reservierungspositionen, welche eine Zimmerkategorie und eine Menge enthalten. Dazu wird noch der Kunde gespeichert, welcher die Resevierung getätigt hat.
+\subsubsection{Reservierungsposition}
+Die Reservierungsposition gibt an in welcher Kategorie eine bestimmte Anzahl von
+Zimmern reserviert wurde.
 \subsubsection{Vertragspartner}
-Beim Vertragspartner handelt es sich um eine spezielle Form eines Kunden. Er hat einen Vertrag mit dem Hotel abgeschlossen und erhält spezielle Konditionen. Die Vertragspartner werden unterteilt in Firmen und \Glspl{Reisebuero}.
+Beim Vertragspartner handelt es sich um eine spezielle Form eines \Gls{Kunde}n.
+Er hat einen Vertrag mit dem Hotel abgeschlossen und erhält spezielle Konditionen. Die Vertragspartner werden unterteilt in Firmen und \Glspl{Reisebuero}.
+\subsubsection{Firma}
+Eine Firma ist ein spezieller Vertragspartner, sie erhält spezielle Konditionen
+durch den Vertrag den sie abgeschlossen hat.
+\subsubsection{Reisebüro}
+Eine Firma ist ein spezieller Vertragspartner, durch den Vertrag der
+abgeschlossen wurde kann ein \Gls{Reisebuero} ein bestimmtes Kontingent
+zugewiesen bekommen.
 \subsubsection{Kontingent}
 Bei dem Kontingent handelt es sich um eine spezielle Art von Reservierung die nur für \Glspl{Reisebuero} verwendet werden. Für sie gelten spezielle Regelungen und werden deshalb getrennt verwaltet.
+\subsubsection{Kontingentposition}
+Eine Kontingentposition ist eine Aufzählung von Zimmern einer bestimmten
+Kategorie. Sie ist einem Kontingent zugewiesen.
 \subsubsection{Zimmer}
 Das Hotelzimmer ist ein Raum den ein Kunde gegen Bezahlung in Anspruch nehmen kann.
 \subsubsection{Zimmerstatus}
 Der Zimmerstatus beschreibt in welcher Lage sich das Zimmer im aktuellen Moment befindet.
+\subsubsection{Zimmerkategorie}
+Die Zimmer werden in bestimmte Kategorien unterteilt. Von jeder Kategorie ist
+nur eine bestimmte Anzahl von Zimmern vorhanden, welche auch einen Preis
+zugewiesen haben.
 \subsubsection{Kunde}
 Der Kunde ist die Instanz die in direkten Zusammenhang mit einer Rechnung steht.
 Einem Kunden ist eindeutig eine Rechnung zuzuordnen.
 \subsubsection{Rechnung}
 Eine Rechnung wird erstellt und durch ein Zahlungsmittel beglichen, dann gilt die Rechnung als abgeschlossen. Eine Rechnung hat folgende Bestandteile.
+\subsubsection{Rechnungsposition}
+Die Rechnungsposition enthält die Anzahl einer bestimmten Zusatzleistung oder
+eines Aufenthaltes. Sie wird in einer Rechnung aufgelistet.
+\subsubsection{Preis}
+Der Preis gibt an wie viel ein Zimmer in einer bestimmten Kategorie kostet. Er
+ist unter anderem abhängig von der Saison.
+\subsubsection{Saison}
+Da es verschiedene Saisonen im Jahr gibt, wird mit dieser Saison angegeben
+welcher Einfluss auf den Preis etc genommen wird. 
+\subsubsection{Aufenthalt}
+Der Aufenthalt gibt an welcher bzw. welche Gast bzw Gäste welche Zimmer haben.
+Außerdem wird dem Aufenthalt die Zusatzleistungen zugewiesen. Der Aufenthalt ist
+auch eine eigene Rechnungsposition.
+\subsubsection{Zusatzleistung}
+Bei einer Zusatzleistung handelt es sich um eine bestimmte Leistung welche nicht
+beim normalen Aufenthalt inkludiert ist. Sie wird zusätzlich verrechnet.
 
 \newpage
 
