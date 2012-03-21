@@ -259,6 +259,21 @@ Der Akteur (mit entsprechender Berechtigungsstufe) wählt eine Kategorie der Sta
 \subsubsection{Zimmerwechsel}
 Der Akteur wählt den aktuellen Aufenthalt des betreffenden Gastes aus und kann diesen in ein passendes Zimmer umbuchen. Auch eventuell nötige Kategoriewechsel, die erst mit dem Gast abgesprochen werden müssen, sind möglich.
 
+\subsubsection{Tages-, Wochen- und Monatsabschluss}
+Vor allem für das Backoffice interessant ist die Funktion automatisierte Abschlüsse erstellen zu lassen und diese über die Schnittstelle zur Buchhaltung weiterzuleiten.
+
+\subsubsection{Rechnungen}
+Einerseits können jederzeit Zwischenrechnungen erstellt, andererseits können Abschlussrechnungen beim Check-Out auch problemlos aufgeteilt werden, um zum Beispiel Geschäftsreisenden entgegenzukommen. Daneben bietet Roomanizer die Möglichkeit an einem festgelegten Zeitpunkt automatische (Zwischen-)Rechnungen zu erstellen. 
+
+\subsubsection{Statistiken}
+Es können jederzeit Statistiken und Reports zu Zimmerauslastung, Zusatzleistungen, Gästedaten, Zufriedenheitsfaktoren etc. erstellt und ausgedruckt werden.
+
+\subsubsection{Schnittstelle zur Buchhaltung}
+Roomanizer bietet eine Schnittstelle zu verschiedensten Typen von Buchhaltungssoftware indem Rechnungen automatisiert als .csv-Datei weitergeleitet werden.
+
+\subsection{Berechtigungssystem}
+Um das System für ein möglichst breites Anwenderspektrum zugänglich zu machen aber trotzdem gewissen Sicherheitsaspekte nicht zu vernachlässigen bietet Roomanizer ein durchgängiges Berechtigungssystem. Der Benutzer loggt sich mit seinen Benutzerdaten ein und erhält dann Zugriff auf die für ihn definierten Funktionen.
+
 \newpage
 
 \section{Domänenmodell}
@@ -359,6 +374,14 @@ Das Verwenden einer Maus soll aber schon optional sein, da die Einstiegshürde a
 Die Software wird vom Benutzer über eine grafische Benutzeroberfläche auf handelsüblichen Desktoprechnern bedient.
 
 Das Hauptfenster soll die Grundfunktionalitäten (Reservierungen, Gäste, ...) über einzelne Reiter zur Verfügung stellen. Die Auflistung dieser Elemente erfolgt über Listen, wobei das aktuell ausgewählte Element in einer Vorschau auch editiert werden kann. Über diverse Buttons können verschiedene Aktionen gestartet werden.
+
+\includegraphics[width=\linewidth]{Images/GUI_Overview.png}
+
+Als kurzes Beispiel sei hier noch ein der Umgang mit Reservierungen erwähnt. Wie bereits erwähnt enthält ein Tab eine Liste mit allen Reservierungen. Bei Auswahl einer Reservierung sieht man rechts eine editierbare Vorschau, und einige Buttons, mit denen man Aktionen auf Bezug des aktuell ausgewählten Element auswählen kann.
+
+\includegraphics[width=\linewidth]{Images/GUI_Dialog.png}
+
+Drückt man z.B. den Checkin-Button, so erhält man ein Dialogfenster, in dem man eine Auflistung aller zugewiesenen Zimmer, und deren Preise hat. All diese Informationen können noch geändert werden, bevor man mit einem Klick die ganzen Zimmer vergibt.
 \subsubsection{Software Schnittstellen}
 Es sind Schnittstellen zu den bestehenden Systemen (Finanzbuchhaltung, Debitorenbuchhaltung, Food and Beverage Verwaltung) vorzusehen.
 \subsubsection{Kommunikationsschnittstellen}
@@ -367,6 +390,7 @@ Es ist nicht vorgesehen, dass das System von jedem Mitarbeiter des Hotels zu bed
 \newpage
 
 \section{Iterationsplan (Timeboxes)}
+\input iterationsplan
 
 \newpage
 

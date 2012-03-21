@@ -27,8 +27,7 @@
 
 \paragraph{Nachbedingung}
 \begin{itemize}
-	\item Der Gast hat den Schlüssel abgegeben
-	\item Der Gast hat die Rechnung beglichen
+	\item Die Rechnung muss an die Buchhaltung übergeben werden können
 	\item Das Zimmer muss im System wieder als frei markiert sein
 \end{itemize}
 
@@ -39,8 +38,8 @@
 	\item Das System zeigt die in Anspruch genommene Leistungen an.
     \item Das System erstellt eine \Gls{Zwischenrechnung}.
 	\item Der \Gls{Gast} kontrolliert die \Gls{Zwischenrechnung}.
-	\item Der \Gls{Gast} bezahlt die \Gls{Zwischenrechnung}.
 	\item Der \Gls{Gast} erhält vom System die endgültige \Gls{Rechnung}.
+	\item Der \Gls{Gast} bezahlt die \Gls{Zwischenrechnung}.
 	\item Der \Gls{Rezeptionist} teilt dem System mit, dass der \Gls{Gast} wieder abgereist ist.
 	\item Der \Gls{Gast} gibt den Schlüssel ab.
 \end{enumerate}
@@ -62,9 +61,55 @@
 	\item
 	\begin{longenum}
 		\item Der \Gls{Gast} ist mit der \Gls{Zwischenrechnung} nicht einverstanden:
+		\begin{longenum}
+			\item Der \Gls{Rezeptionist} holt den Geschäftsführer
+			\item Nachdem einige Rechnungspunkte besprochen wird eine neue Rechnung
+			erstellt.
+			\item \emph{weiter mit Basisablauf Punkt 6}
+		\end{longenum}
+	\end{longenum}
+	\begin{longenum}
+	\item Der \Gls{Gast} will bestimmte Rechnungspostionen auf einer eigenen
+	\Gls{Rechnung}:
+		\begin{longenum}
+			\item Der \Gls{Rezeptionist} nimmt die gewünschten Rechnungspositionen von
+			der \Gls{Zwischenrechnung} und erstellt mit Ihnen eine eigene \Gls{Rechnung}.
+			\item Der \Gls{Gast} kontrolliert die neuen \Gls{Rechnung}en und nimmts sie
+			entgegen.
+			\item \emph{weiter mit Basisablauf Punkt 6}
+		\end{longenum}
+	\end{longenum}
+	\begin{longenum}
+	\item Der \Gls{Gast} will das die Rechnung auf eine andere Person lautet:
+		\begin{longenum}
+			\item Der \Gls{Rezeptionist} trägt die angegebenen Daten als \Gls{Kunde} ein.
+			\item \emph{weiter mit Basisablauf Punkt 6}
+		\end{longenum}
 	\end{longenum}
 	\item
 	\item
+	\begin{longenum}
+		\item Der \Gls{Kunde} will die Rechnung nicht gleich bezahlen:
+		\begin{longenum}
+			\item Der \Gls{Rezeptionist} vergewissert sich das der \Gls{Gast} auf Kredit
+			zahlen kann.
+			\begin{longenum}
+				\item Der \Gls{Gast} kann nicht auf Kredit bezahlen:
+				\begin{longenum}
+					\item Der \Gls{Rezeptionist} macht den Kunden darauf aufmerksam.
+					\item \emph{weiter mit Basisablauf Punkt 7}
+				\end{longenum}
+			\end{longenum}
+			\begin{longenum}
+				\item Der \Gls{Gast} kann auf Kredit bezahlen:
+				\begin{longenum}
+					\item Der \Gls{Rezeptionist} ändert die Zahlungsart der \Gls{Rechnung} auf
+					Kredit.
+					\item \emph{weiter mit Basisablauf Punkt 8}.
+				\end{longenum}
+			\end{longenum}
+		\end{longenum}
+	\end{longenum}
 	\item
 	\item
 	\begin{longenum}
@@ -84,9 +129,6 @@
 mehrmals täglich (sehr hoch)
 
 \paragraph{Offene Punkte}
-\begin{itemize}
-	\item Sind Arrangement das gleiche wie Leistungen?
-	\item Vorgehen bei Nichtbezahlen der Zwischenrechnung
-\end{itemize}
+
 
 \newpage
