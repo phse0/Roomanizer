@@ -45,7 +45,6 @@
 %Content
 \tableofcontents
 \newpage
-
 \section{Einführung}
 \subsection{System}
 Das Pflichtenheft beschreibt ein EDV - System für ein Hotel(Roomanizer), welches 
@@ -80,27 +79,29 @@ Die Prozesse werden schriftlich und mit Hilfe von Diagrammen dargestellt.
 Dieses Dokument umfasst folgende Bereiche:
 \begin{enumerate}
 	\item Stakeholder
+        \item Produktüberblick
 	\item Domänenmodell
-	\item UseCases 
+	\item UseCases
+        \item Iterationsplan 
 \end{enumerate}
 
-\newpage
+
 
 \section{Stakeholder- und Benutzerbeschreibung}
 Stakeholders sind die Personen oder Gruppen die direkt oder indirekt Interesse am Ergebnis des Projektes haben. In diesem Abschnitt wird ein Profil, der Stakeholder und Benutzer die im Projekt involviert sind, beschrieben. Es werden nicht die spezifischen Anforderungen beschrieben, diese werden detailliert in einem anderen Kapitel behandelt. Die in folgender Tabelle beschriebenen Stakeholders bilden somit eine Basis um festzustellen welche Anforderungen berechtigt sind bzw. benötigt werden. 
-Stakeholders sind die Personen oder Gruppen die direkt oder indirekt Interesse am Ergebnis des Projektes haben. In diesem Abschnitt wird ein Profil, der Stakeholder und Benutzer die im Projekt involviert sind, beschrieben. Es werden nicht die spezifischen Anforderungen beschrieben, diese werden detailliert in einem anderen Kapitel behandelt. Die in folgender Tabelle beschriebenen Stakeholders bilden somit eine Basis um festzustellen welche Anforderungen berechtigt sind und benötigt werden. 
+
 \subsection{Stakeholder\slash{}Benutzer Zusammenfassung}
 \begin{tabular}{|l|p{4cm}|p{4cm}|}
     \hline
     \textbf{Name} & \textbf{Rolle\slash{}Funktion} & \textbf{Interessiert an} \\
     \hline
     Geschäftsführer & 
-Vertritt die Gesellschaft gerichtlich und außergerichtlich, leitet die Geschäfte des Hotels und hat gegenüber Dritten eine unbeschränkte Vertretungsmacht. &
+    Vertritt die Gesellschaft gerichtlich und außergerichtlich, leitet die Geschäfte des Hotels und hat gegenüber Dritten eine unbeschränkte Vertretungsmacht. &
     Verschiedene Möglichkeiten zur Kontrolle über die aktuelle Situation des Hotels, z.B. durch Bereitstellung von Reports.\\
     \hline
     Manager &
 	Ist für den finaziellen Erfolg verantwortlich und koordiniert das Personal. &
-	Fehlerfreies System, mit welchem man ganz einfach und schnell Reservierungen, Buchungen usw. verwalten kann. \\
+	Fehlerfreies System, mit welchem man ganz einfach und schnell Reservierungen, Buchungen etc. verwalten kann. \\
     \hline
     \Gls{Rezeptionist} &
 	Empfängt den \Gls{Gast} an der \Gls{Rezeption} kümmert sich um \Gls{Checkin}, \Gls{Checkout} und um die Probleme, Wünsche, Anregungen der \Glspl{Gast}. &
@@ -110,17 +111,17 @@ Vertritt die Gesellschaft gerichtlich und außergerichtlich, leitet die Geschäf
 Personeneinsatzplanung, Speisekartengestalten, Anleitung der \Gls{Mitarbeiter} der Küche und Wareneinkauf &
 	System mit zuverlässigen Benachrichtigungen an seine \Gls{Mitarbeiter} für die Einsatzplanung, wünschenswert mit Kalendereinteilung und aktueller Warenstand für die Küche. \\
     \hline
-    Zimmermädchen & 
+    Raumpfleger & 
 	Reinigt die Zimmer, füllt die Minibar auf. &
-	Sie erledigt Ihre Aufgabe möglichst schnell, um die \Glspl{Gast} nicht zu stören. \\
+	Erledigt die zugeteilten Aufgaben möglichst schnell, um die \Glspl{Gast} nicht zu stören. \\
     \hline
     Tourismuskauffrau &
-	Arbeitet an der \Gls{Rezeption}, \Gls{Reservierung} und \Gls{Checkin}, Organisation von Veranstaltungen für die \Glspl{Gast}, Einteilung der \Gls{Zimmer} falls nötig &
-	Leicht mit Tastatur bedienbares System welches leicht zu erlernende Tastenkürzeln beinhaltet \\
+	Arbeitet an der \Gls{Rezeption}, \Gls{Reservierung} und \Gls{Checkin}, Organisation von Veranstaltungen für die \Glspl{Gast}, Einteilung der \Gls{Zimmer} falls nötig. &
+	Leicht mit Tastatur bedienbares System welches leicht zu erlernende Tastenkürzeln beinhaltet. \\
     \hline
     \Gls{Gast} &
-	Konsumiert die Dienstleistungen des Hotels. Ist geschäftlich unterwegs &
-	Im Hotel übernachten um am nächsten Tag an einem Kongress teilzunehmen. \\
+	Konsumiert die Dienstleistungen des Hotels. Nimmt die Leistungen privat oder geschäftlich in kauf. &
+	Möchte einen reibungslosen Ablauf beim \Gls{Checkin} und beim \Gls{Checkout}. \\
     \hline
     Auftraggeber &
 	Er kennt die Anforderungen im Detail. Und stellt stellt sein Wissen dem Entwickler zur Verfügung. Er entscheidet über die Umsetzung. &
