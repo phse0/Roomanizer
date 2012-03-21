@@ -7,6 +7,7 @@
 \usepackage[xindy]{glossaries}
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
+\usepackage{graphicx}
 
 %preamble
 \newlist{longenum}{enumerate}{6}
@@ -50,23 +51,23 @@
 Das Pflichtenheft beschreibt ein EDV - System für ein Hotel(Roomanizer), welches 
 folgende Funktion anbietet:
 \begin{itemize}
-	\item Reservierung
-	\item Check - In
-	\item Check - Out
+	\item \Gls{Reservierung}
+	\item \Gls{Checkin}
+	\item \Gls{Checkout}
 	\item Zimmerverwaltung
-	\item Kontingentverwaltung für Reisebüro
-	\item Verwaltung von Kunden und Vertragspartner
+	\item Kontingentverwaltung für \Gls{Reisebuero}
+	\item Verwaltung von \Glspl{Kunde} und \Gls{Vertragspartner}
 	\item Protokollierung
 	\item Statistiken
 \end{itemize}
 \subsection{Zweck}
- Das Pflichtenheft beschreibt alle Anforderung welche im Roomanizer enthalten sein müssen. Bei fertigstellung des Systems wird jede hier definierte Anforderung von der Software bereitgestellt.
+Das Pflichtenheft beschreibt alle Anforderung welche im Roomanizer enthalten sein müssen. Bei Fertigstellung des Systems wird jede hier definierte Anforderung von der Software bereitgestellt.
 \subsection{Umfang}
 Das Pfichtenheft umfasst alle Arbeitsprozesse welche vom System unterstützt werden. 
 Die Arbeitsprozesse sind in zwei Gruppen eingeordnet:
 \begin{enumerate}
-\item Front-Office, das sind alle Abläufe die direkt an der Rezeption mit dem Gast stattfinden.
-\item Back-Office, es umfasst alle Abläufe die nicht direkt mit dem physischen Gast zu tun haben.
+\item \Gls{Frontoffice}, das sind alle Abläufe die direkt an der \Gls{Rezeption} mit dem \Gls{Gast} stattfinden.
+\item \Gls{Backoffice}, es umfasst alle Abläufe die nicht direkt mit dem physischen \Gls{Gast} zu tun haben.
 \end{enumerate}
 Die Prozesse werden schriftlich und mit Hilfe von Diagrammen dargestellt.
 \subsection{Referenzen}
@@ -76,7 +77,7 @@ Die Prozesse werden schriftlich und mit Hilfe von Diagrammen dargestellt.
 \end{itemize}
 
 \subsection{Überblick}
-Dieses Document umfasst folgende Bereiche:
+Dieses Dokument umfasst folgende Bereiche:
 \begin{enumerate}
 	\item Stakeholder
 	\item Domänenmodell
@@ -101,60 +102,172 @@ Vertritt die Gesellschaft gerichtlich und außergerichtlich, leitet die Geschäf
 	Ist für den finaziellen Erfolg verantwortlich und koordiniert das Personal. &
 	Fehlerfreies System, mit welchem man ganz einfach und schnell Reservierungen, Buchungen usw. verwalten kann. \\
     \hline
-    Rezeptionist &
-	Empfängt den Gast an der Rezeption kümmert sich um Check-in, Check-out und um die Probleme, Wünsche, Anregungen der Gäste. &
-	Schnelles, zuverlässiges System um Kundenwünsche zu erfüllen. Der Fokus während des Gesprächs mit dem Kunden sollte aber so wenig wie möglich am Bildschirm liegen. \\
+    \Gls{Rezeptionist} &
+	Empfängt den \Gls{Gast} an der \Gls{Rezeption} kümmert sich um \Gls{Checkin}, \Gls{Checkout} und um die Probleme, Wünsche, Anregungen der \Glspl{Gast}. &
+	Schnelles, zuverlässiges System um Kundenwünsche zu erfüllen. Der Fokus während des Gesprächs mit dem \Gls{Kunde}n sollte aber so wenig wie möglich am Bildschirm liegen. \\
     \hline
     Koch &
-Personeneinsatzplanung, Speisekartengestalten, Anleitung der Mitarbeiter der Küche und Wareneinkauf. &
-	System mit zuverlässigen Benachrichtigungen an seine Mitarbeiter für die Einsatzplanung, wünschenswert mit Kalendereinteilung und aktueller Warenstand für die Küche. \\
+Personeneinsatzplanung, Speisekartengestalten, Anleitung der \Gls{Mitarbeiter} der Küche und Wareneinkauf &
+	System mit zuverlässigen Benachrichtigungen an seine \Gls{Mitarbeiter} für die Einsatzplanung, wünschenswert mit Kalendereinteilung und aktueller Warenstand für die Küche. \\
     \hline
-    Raumpfleger & 
-	Reinigt die Zimmer überwacht den Status des Inventars im Zimmer, Minibar, TV-Remote usw. &
-	Möchte die zugeteilten Aufgaben möglichst schnell und unauffällig durchführen.\\
+    Zimmermädchen & 
+	Reinigt die Zimmer, füllt die Minibar auf. &
+	Sie erledigt Ihre Aufgabe möglichst schnell, um die \Glspl{Gast} nicht zu stören. \\
     \hline
     Tourismuskauffrau &
-	Arbeitet an der Rezeption, Reservierung und Check-In. Organisiert Veranstaltungen für die Gäste, Einteilung der Zimmer falls nötig. &
-	Möchte ein leicht mit Tastatur bedienbares System.  \\
+	Arbeitet an der \Gls{Rezeption}, \Gls{Reservierung} und \Gls{Checkin}, Organisation von Veranstaltungen für die \Glspl{Gast}, Einteilung der \Gls{Zimmer} falls nötig &
+	Leicht mit Tastatur bedienbares System welches leicht zu erlernende Tastenkürzeln beinhaltet \\
     \hline
-    Gast &
-	Konsumiert die Dienstleistungen des Hotels. Ist geschäftlich Unterwegs. &
-	Einen reibungslosen Ablauf. \\
+    \Gls{Gast} &
+	Konsumiert die Dienstleistungen des Hotels. Ist geschäftlich unterwegs &
+	Im Hotel übernachten um am nächsten Tag an einem Kongress teilzunehmen. \\
     \hline
     Auftraggeber &
 	Er kennt die Anforderungen im Detail. Und stellt stellt sein Wissen dem Entwickler zur Verfügung. Er entscheidet über die Umsetzung. &
 	Erfolgreiche Umsetzung und Integration des Produkts. Und die Kosten dabei im Rahmen halten. \\
     \hline
     Entwickler &
-Setzt die Angaben des Auftraggebers in ein Softwareprodukt um.&
-Zufriedenheit des Auftraggebers bezüglich dem erstellten Produkt.\\
+	Setzt die Angaben des Auftraggebers in ein Softwareprodukt um. &
+	Zufriedenheit des Auftraggebers bezüglich dem erstellten Produkt.\\
     \hline
 \end{tabular}
 
-\newpage
 \subsection{Benutzerumgebung}
 Die Benutzerumgebung ist in Frontoffice und Backoffice unterteilt. Der Frontoffice-Bereich ist der Bereich der direkt mit dem physischen Gast und Hotelmitarbeiter in Verbindung steht. Der Backoffice-Bereich ist der Bereich der nicht direkt mit dem physischen Gast in Verbindung steht. Die Umgebung stellt verschiedene Berechtigungen zur Verfügung. Es ist möglich dem Mitarbeiter bestimmte Rechte zu geben bzw. zu entziehen. Die Umgebung bietet Schnittstellen zur Finanzbuchhaltung, Verwaltung von offenen Rechnungen und zur Food and Beverage Verwaltung.
 
+\newpage
+
+\section{Produkt Überblick}
+\subsection{Zusammenfassung Produktfähigkeiten}
+\begin{tabular}{|p{5.7cm}|p{5.7cm}|}
+	\hline
+	\textbf{Produktfähigkeit} &
+	\textbf{Stakeholder Nutzen}
+	\\
+	\hline
+	Zimmerreservierung &
+	Höhere Effizienz des Front- und Back-Office
+	\\
+	\hline
+	\Gls{Checkin} &
+	Schnell und komfortabel für \Gls{Gast} und \Gls{Frontoffice}
+	\\
+	\hline
+	Automatisierte Rechnungslegung &
+	\Glspl{Rechnung} sind vor \Gls{Checkout} schon gestellt, Vorgagng wird stark beschleunigt
+	\\
+	\hline
+	Verschiedenste Operationen mit \Glspl{Rechnung} (\Gls{Zwischenrechnung}, Rechnungsteilung, Zahlarten usw.) &
+	Flexibler Umgang, kommt \Gls{Kunde}n entgegen und ist trotzdem einfach zu bedienen für \Gls{Frontoffice}
+	\\
+	\hline
+	\Gls{Checkout} &
+	Schnell und komfortabel für Gast und \Gls{Frontoffice}
+	\\
+	\hline
+	Kontingentverwaltung für \Gls{Reisebuero} &
+	\Gls{Backoffice} kann verschiedenste Vertragskonditionen für \Gls{Reisebuero} erstellen und \Glspl{Kontingent} effektive nutzen
+	\\
+	\hline
+	Vertragspartnerverwaltung &
+	\Gls{Backoffice} kann verschiedenste Vertragskonditionen für \Gls{Reisebuero} erstellen und \Glspl{Kontingent} effektiv nutzen
+	\\
+	\hline
+	Berechtigungssystem &
+	Teile der Applikation sind aus Sicherheits- und Diskretionsgründen nur Angestellten ab einer bestimmten Berechtigungsstufe verfügbar
+	\\
+	\hline
+	Log-System &
+	Alle Vorgänge in der Hotelapplikationen werden unter verschiedensten Gesichtspunkten aufgezeichnet
+	\\
+	\hline
+	Statistiken &
+	\Gls{Backoffice} und Management können auf Basis der Log-System aufschlussreiche Statistiken und Report erstellen die in weiterer Folge den Betrieb optimieren
+	\\
+	\hline
+\end{tabular}
+
+\subsection{Produktfähigkeiten/Eigenschaften}
+\subsubsection{CheckIn }
+Roomanizer ist in der Lage CheckIns schnell und zuverlässig zu verarbeiten. Der Akteur der das System bedient kann mittels  verschiedensten Suchbegriffen nach vorhandenen Reservierungen suchen und den CheckIn durchführen. Die Reservierung kann "On-The-Fly" noch geändert werden (Zusatzleistungen hinzufügen oder entfernen, Preis ändern, Zimmer ändern, usw.). Weiters kann der Akteur noch die Identität des Gastes mit dem System abgleichen.
+
+\subsection{CheckOut }
+Roomanizer gestaltet das CheckOut von einzelnen Gästen oder Gruppen sehr einfach. Weiters können CheckOuts durch automatische, im Vorfeld, gelegte (Zwischen-)Rechnungen beschleunigt werden.
+
+\subsection{Reservierungen}
+Reservierungen können mit einem Optionsdatum versehen werden. Weiters bleibt es dem Betrieb offen welche Daten mindestens benötigt werden um eine Reservierung zu machen oder zu bestätigen.
+
+\subsection{Stammdaten }
+Der Akteur (mit entsprechender Berechtigungsstufe) wählt eine Kategorie der Stammdaten aus die er bearbeiten will oder in die er neue Stammdaten eintragen will. Eine schnelle Datenbankanbindung macht das editieren Stammdaten sehr komfortabel.
+
+\subsection{Aufenthalt verlängern }
+Über die selbe Suche die der Akteur bereits aus dem CheckIn kennt, können Aufenthalte verändernt werden. Auch für den Fall, dass das aktuell belegte Zimmer nicht weiter verfügbar ist kann mit Roomanizer eine passenden Lösung gefunden werden. 
+
+\subsection{Zimmerwechsel}
+Der Akteur wählt den aktuellen Aufenthalt des betreffenden Gastes aus und kann diesen in ein passendes Zimmer umbuchen. Auch eventuell nötige Kategoriewechsel, die erst mit dem Gast abgesprochen werden müssen, sind möglich.
+
+
+
+
+\newpage
+
+
 \section{Domänenmodell}
 \subsection{Überblick}
+\includegraphics[width=\linewidth]{Images/Domaenenmodell_Uebersicht.png}
 \subsection{Detailliertes Modell}
+\includegraphics[width=\linewidth]{Images/Domaenenmodell.png}
 \subsubsection{Gast}
 Beim Gast meint man eine Person welche im Hotel Leistungen bezieht. In ihr ist unter anderem der Name und die Anschrift der Person festgehalten.
 \subsubsection{Reservierung}
 Eine Reservierung besteht aus verschiedenen Reservierungspositionen, welche eine Zimmerkategorie und eine Menge enthalten. Dazu wird noch der Kunde gespeichert, welcher die Resevierung getätigt hat.
+\subsubsection{Reservierungsposition}
+Die Reservierungsposition gibt an in welcher Kategorie eine bestimmte Anzahl von
+Zimmern reserviert wurde.
 \subsubsection{Vertragspartner}
-Beim Vertragspartner handelt es sich um eine spezielle Form eines Kunden. Er hat einen Vertrag mit dem Hotel abgeschlossen und erhält spezielle Konditionen. Die Vertragspartner werden unterteilt in Firmen und Reisebüros.
+Beim Vertragspartner handelt es sich um eine spezielle Form eines \Gls{Kunde}n.
+Er hat einen Vertrag mit dem Hotel abgeschlossen und erhält spezielle Konditionen. Die Vertragspartner werden unterteilt in Firmen und \Glspl{Reisebuero}.
+\subsubsection{Firma}
+Eine Firma ist ein spezieller Vertragspartner, sie erhält spezielle Konditionen
+durch den Vertrag den sie abgeschlossen hat.
+\subsubsection{Reisebüro}
+Eine Firma ist ein spezieller Vertragspartner, durch den Vertrag der
+abgeschlossen wurde kann ein \Gls{Reisebuero} ein bestimmtes Kontingent
+zugewiesen bekommen.
 \subsubsection{Kontingent}
-Bei dem Kontingent handelt es sich um eine spezielle Art von Reservierung die nur für Reisebüros verwendet werden. Für sie gelten spezielle Regelungen und werden deshalb getrennt verwaltet.
+Bei dem Kontingent handelt es sich um eine spezielle Art von Reservierung die nur für \Glspl{Reisebuero} verwendet werden. Für sie gelten spezielle Regelungen und werden deshalb getrennt verwaltet.
+\subsubsection{Kontingentposition}
+Eine Kontingentposition ist eine Aufzählung von Zimmern einer bestimmten
+Kategorie. Sie ist einem Kontingent zugewiesen.
 \subsubsection{Zimmer}
 Das Hotelzimmer ist ein Raum den ein Kunde gegen Bezahlung in Anspruch nehmen kann.
 \subsubsection{Zimmerstatus}
 Der Zimmerstatus beschreibt in welcher Lage sich das Zimmer im aktuellen Moment befindet.
+\subsubsection{Zimmerkategorie}
+Die Zimmer werden in bestimmte Kategorien unterteilt. Von jeder Kategorie ist
+nur eine bestimmte Anzahl von Zimmern vorhanden, welche auch einen Preis
+zugewiesen haben.
 \subsubsection{Kunde}
 Der Kunde ist die Instanz die in direkten Zusammenhang mit einer Rechnung steht.
 Einem Kunden ist eindeutig eine Rechnung zuzuordnen.
 \subsubsection{Rechnung}
 Eine Rechnung wird erstellt und durch ein Zahlungsmittel beglichen, dann gilt die Rechnung als abgeschlossen. Eine Rechnung hat folgende Bestandteile.
+\subsubsection{Rechnungsposition}
+Die Rechnungsposition enthält die Anzahl einer bestimmten Zusatzleistung oder
+eines Aufenthaltes. Sie wird in einer Rechnung aufgelistet.
+\subsubsection{Preis}
+Der Preis gibt an wie viel ein Zimmer in einer bestimmten Kategorie kostet. Er
+ist unter anderem abhängig von der Saison.
+\subsubsection{Saison}
+Da es verschiedene Saisonen im Jahr gibt, wird mit dieser Saison angegeben
+welcher Einfluss auf den Preis etc genommen wird. 
+\subsubsection{Aufenthalt}
+Der Aufenthalt gibt an welcher bzw. welche Gast bzw Gäste welche Zimmer haben.
+Außerdem wird dem Aufenthalt die Zusatzleistungen zugewiesen. Der Aufenthalt ist
+auch eine eigene Rechnungsposition.
+\subsubsection{Zusatzleistung}
+Bei einer Zusatzleistung handelt es sich um eine bestimmte Leistung welche nicht
+beim normalen Aufenthalt inkludiert ist. Sie wird zusätzlich verrechnet.
 
 \newpage
 
@@ -166,6 +279,7 @@ Eine Rechnung wird erstellt und durch ein Zahlungsmittel beglichen, dann gilt di
 \input UseCases/checkout
 \input UseCases/reservierung_firmen
 \input UseCases/reservierung_individualgast
+\input UseCases/reservierung_reisebuero
 \input UseCases/reservierung_aendern
 \input UseCases/reservierung_bestaetigen
 \input UseCases/reservierung_stornieren_individualperson
