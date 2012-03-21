@@ -289,9 +289,10 @@ beim normalen Aufenthalt inkludiert ist. Sie wird zusätzlich verrechnet.
 \newpage
 
 \section{Nichtfunktionale Anforderungen}
-\subsection{Regeln}
 \subsection{Usability}
 Natürlich wird versucht die Software selbsterklärend zu gestalten, trotzdem inkludiert das Projekt eine fortlaufende Dokumentation, sowie eine Hilfe, die die Einarbeitungszeit wesentlich verringern soll.
+
+Weiters soll die Software über eine flache Lernkurve verfügen, und somit wenig Schulungsaufwand erzeugen. Das soll durch das Verwenden von bereits bekannten mentalen Modellen und Design Patterns, welche auch in anderer gängiger Software zum Einsatz kommen, erreicht werden.
 \subsection{Zuverlässigkeit}
 Die Datenbank, auf der das System arbeitet, sollte sich immer einen konsistenten Zustand merken, damit im Fehlerfall ein einfacher Neustart des Systems zur Behebung ausreicht. Trotzdem sollten am besten noch automatisiert Backups erstellt werden, um die Wahrscheinlichkeit eines zu großen Datenverlusts zu begrenzen.
 \subsection{Performanz}
@@ -299,9 +300,14 @@ Es ist für die Zufriedenheit des Kunden, und somit auch für den \Gls{Rezeption
 
 Außerdem ist die ständige Verfügbarkeit des Systems von großer Bedeutung, damit Anfragen von Kunden bzw. Gästen sofort bearbeitet werden können. Sollte die Verfügbarkeit für einen gewissen Zeitraum nicht gegeben sein, z.B. wegen Wartungsarbeiten, dann muss dieser Ausfall bereits im Vorherein kommuniziert werden, sodass das Persoal sich auf diese unangenehme Situation vorbereiten kann.
 \subsection{Unterstützbarkeit}
+Um eine möglichst breite Benutzerschaft anzusprechen, wird die Software mehrsprachig gehalten. Leider können wir aus Zeitgründen nicht auf Seh- oder andere Behinderungen eingehen, so dass eingeschränkte Personen auf andere Hilfsmittel wie Screenreader oder ähnliches zurückgreifen müssen.
+
+Das Verwenden einer Maus soll aber schon optional sein, da die Einstiegshürde andernfalls für Menschen mit Sehbehinderung außerordentlich groß wäre. Das heißt dass die Software auch alleine mit der Tastatur zu bedienen sein sollte.
 \subsection{Schnittstellen}
 \subsubsection{Benutzerschnittstellen}
 Die Software wird vom Benutzer über eine grafische Benutzeroberfläche auf handelsüblichen Desktoprechnern bedient.
+
+Das Hauptfenster soll die Grundfunktionalitäten (Reservierungen, Gäste, ...) über einzelne Reiter zur Verfügung stellen. Die Auflistung dieser Elemente erfolgt über Listen, wobei das aktuell ausgewählte Element in einer Vorschau auch editiert werden kann. Über diverse Buttons können verschiedene Aktionen gestartet werden.
 \subsubsection{Software Schnittstellen}
 Es sind Schnittstellen zu den bestehenden Systemen (Finanzbuchhaltung, Debitorenbuchhaltung, Food and Beverage Verwaltung) vorzusehen.
 \subsubsection{Kommunikationsschnittstellen}
