@@ -1,27 +1,30 @@
 \subsubsection{Aufenthalt verlängern}
 
 \paragraph{Kurzbeschreibung}
-Ein \Gls{Gast} kommt zur \Gls{Rezeption} und möchte seinen Aufenthalt verlängern. Nachdem der \Gls{Gast} seine Daten dem \Gls{Rezeptionist}en mitgeteilt hat, sucht dieser das entsprechende Zimmer. Anschließend überprüft der \Gls{Rezeptionist}, anhand der \Gls{Belegungsvorschau} ob eine Verlängerung für den gewünschten Zeitraum möglich ist. Anschließend wird das neue Abreisedatum eingetragen.
+Ein \Gls{Gast} kommt zur \Gls{Rezeption} und möchte seinen \Gls{Aufenthalt} verlängern. Nachdem der \Gls{Gast} seine Daten dem \Gls{Rezeptionist}en mitgeteilt hat, sucht dieser das entsprechende Zimmer. Anschließend überprüft der \Gls{Rezeptionist}, anhand der \Gls{Belegungsvorschau} ob eine Verlängerung für den gewünschten Zeitraum möglich ist. Anschließend wird das neue Abreisedatum eingetragen.
 
 \paragraph{Stakeholders und Akteure}
 \begin{itemize}
-\item \Gls{Rezeptionist} - Schnelle und zuverlässige Verlängerung des Aufenthaltes eines \Gls{Gast}es
-\item \Glspl{Gast} - Reibungsloser Ablauf und schnelle Bearbeitung von Verlängerungen des Aufenthaltes
+\item \Gls{Rezeptionist} - Schnelle und zuverlässige Verlängerung des \Gls{Aufenthalt}es eines \Gls{Gast}es
+\item \Glspl{Gast} - Reibungsloser Ablauf und schnelle Bearbeitung von Verlängerungen des \Gls{Aufenthalt}es
 \end{itemize}
 
 \paragraph{Vorbedingung}
 \begin{itemize}
-\item Der \Gls{Gast} muss bereits ein Zimmer bezogen haben.
+\item Der \Gls{Gast} muss bereits ein \Gls{Zimmer} bezogen haben.
 \end{itemize}
 
 \paragraph{Nachbedingung}
+\begin{itemize}
+	\item Der \Gls{Aufenthalt} ist verlängert
+\end{itemize}
 
 \paragraph{Basisablauf}
 \begin{enumerate}
 \item Der \Gls{Gast} kommt zur \Gls{Rezeption} und gibt seine \Gls{Zimmernummer} und eventuell auch \Gls{Belegungsnummer} an.
-\item Der \Gls{Rezeptionist} sucht den Gast anhand der \Gls{Zimmernummer}.
+\item Der \Gls{Rezeptionist} sucht den \Gls{Gast} anhand der \Gls{Zimmernummer}.
 \item Das System zeigt Informationen zum \Gls{Gast} und \Gls{Zimmer} an.
-\item Der \Gls{Rezeptionist} teilt dem System mit, dass der \Gls{Gast} den Aufenthalt verlängern will.
+\item Der \Gls{Rezeptionist} teilt dem System mit, dass der \Gls{Gast} den \Gls{Aufenthalt} verlängern will.
 \item Das System sagt dem \Gls{Rezeptionist}, dass das \Gls{Zimmer} des \Gls{Gast}es bis zum gewünschten Abreisedatum frei ist.
 \item Der \Gls{Rezeptionist} bestätigt die Verlängerung des Aufenthaltes des \Gls{Gast}es.
 \end{enumerate}
@@ -30,10 +33,10 @@ Ein \Gls{Gast} kommt zur \Gls{Rezeption} und möchte seinen Aufenthalt verlänge
 \begin{longenum}
 	\item
 	\begin{longenum}
-		\item Der \Gls{Gast} kennt seine Zimmernummer nicht:
+		\item Der \Gls{Gast} kennt seine \Gls{Zimmernummer} nicht:
 		\begin{longenum}
 			\item Der \Gls{Gast} gibt stattdessen seinen Namen an.
-			\item Der \Gls{Rezeptionist} sucht den Gast anhand des Namens.
+			\item Der \Gls{Rezeptionist} sucht den \Gls{Gast} anhand des Namens.
 			\item \emph{weiter mit Basisablauf Punkt 3}
 		\end{longenum}
 	\end{longenum}
@@ -67,8 +70,9 @@ Ein \Gls{Gast} kommt zur \Gls{Rezeption} und möchte seinen Aufenthalt verlänge
 \end{longenum}
 
 \paragraph{Besondere Anforderungen}
-
-\paragraph{Technologie und Daten Variationsliste}
+\begin{itemize}
+	\item keine
+\end{itemize}
 
 \paragraph{Benutzerfrequenz}
 selten

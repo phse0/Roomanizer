@@ -1,7 +1,7 @@
 \subsubsection{Zimmer wechseln}
 
 \paragraph{Kurzbeschreibung}
-Ein \Gls{Gast} äußert an der \Gls{Rezeption} den Wunsch, das \Gls{Zimmer} zu wechseln. Der \Gls{Rezeptionist} gibt die Zimmernummer in das System ein, und kann dem \Gls{Gast} ein neues \Gls{Zimmer} zuweisen. Dabei werden alle bisher angefallenen Kosten auf das neue \Gls{Zimmer} übertragen, und sind nur noch auf diesem aufrubar.
+Ein \Gls{Gast} äußert an der \Gls{Rezeption} den Wunsch, das \Gls{Zimmer} zu wechseln. Der \Gls{Rezeptionist} gibt die \Gls{Zimmernummer} in das System ein, und kann dem \Gls{Gast} ein neues \Gls{Zimmer} zuweisen. Dabei werden alle bisher angefallenen Kosten auf das neue \Gls{Zimmer} übertragen, und sind nur noch auf diesem aufrubar.
 
 \paragraph{Stakeholders und Akteure}
 \begin{itemize}
@@ -12,24 +12,24 @@ Ein \Gls{Gast} äußert an der \Gls{Rezeption} den Wunsch, das \Gls{Zimmer} zu w
 
 \paragraph{Vorbedingung}
 \begin{itemize}
-	\item Der \Gls{Gast} muss bereits ein Zimmer bezogen haben.
+	\item Der \Gls{Gast} muss bereits ein \Gls{Zimmer} bezogen haben.
 \end{itemize}
 
 \paragraph{Nachbedingung}
 \begin{itemize}
 	\item Dem \Gls{Gast} muss ein neues Zimmer zugeteilt sein.
-	\item Die bereits bestehenden Rechnungen des \Gls{Gast}es dürfen nur noch auf dem neuen Zimmer aufrufbar sein.
+	\item Die bereits bestehenden Rechnungen des \Gls{Gast}es dürfen nur noch auf dem neuen \Gls{Zimmer} aufrufbar sein.
 \end{itemize}
 
 \paragraph{Basisablauf}
 \begin{longenum}
-	\item Der \Gls{Gast} kommt zur \Gls{Rezeption} und gibt seine Zimmernummer und eventuell auch \Gls{Belegungsnummer} an.
-	\item Der \Gls{Rezeptionist} sucht den Gast anhand der Zimmernummer.
+	\item Der \Gls{Gast} kommt zur \Gls{Rezeption} und gibt seine \Gls{Zimmernummer} und eventuell auch \Gls{Belegungsnummer} an.
+	\item Der \Gls{Rezeptionist} sucht den Gast anhand der \Gls{Zimmernummer}.
 	\item Das System zeigt Informationen zum \Gls{Gast} und \Gls{Zimmer} an.
 	\item Der \Gls{Rezeptionist} teilt dem System mit, dass der \Gls{Gast} das \Gls{Zimmer} wechseln will.
 	\item Das System schlägt dem \Gls{Rezeptionist} \Gls{Zimmer} der gleichen Kategorie, die für die restliche Verweildauer des \Gls{Gast}es vefügbar sind, zum Wechsel vor.
-	\item Der \Gls{Rezeptionist} wählt eines dieser Zimmer für den Wechsel aus.
-	\item Der \Gls{Gast} übergibt dem \Gls{Rezeptionist} die Schlüssel für das alte Zimmer, und erhält im Gegenzug die des nuen Zimmers
+	\item Der \Gls{Rezeptionist} wählt eines dieser \Gls{Zimmer} für den Wechsel aus.
+	\item Der \Gls{Gast} übergibt dem \Gls{Rezeptionist} die Schlüssel für das alte \Gls{Zimmer}, und erhält im Gegenzug die des nuen \Gls{Zimmer}s.
 \end{longenum}
 
 \paragraph{Alternativer Ablauf}
@@ -37,10 +37,10 @@ Ein \Gls{Gast} äußert an der \Gls{Rezeption} den Wunsch, das \Gls{Zimmer} zu w
 	\item
 	\item
 	\begin{longenum}
-		\item Der \Gls{Gast} kennt seine Zimmernummer nicht.
+		\item Der \Gls{Gast} kennt seine \Gls{Zimmernummer} nicht.
 		\begin{longenum}
 			\item Der \Gls{Gast} gibt stattdessen seinen Namen an.
-			\item Der \Gls{Rezeptionist} sucht den Gast anhand des Namens.
+			\item Der \Gls{Rezeptionist} sucht den \Gls{Gast} anhand des Namens.
 			\item \emph{weiter mit Basisablauf Punkt 3}
 		\end{longenum}
 	\end{longenum}
@@ -51,7 +51,7 @@ Ein \Gls{Gast} äußert an der \Gls{Rezeption} den Wunsch, das \Gls{Zimmer} zu w
 		\item Es sind keine \Gls{Zimmer} in der selben Kategorie frei:
 		\begin{longenum}
 			\item Das System gibt alle freien \Gls{Zimmer}, die für die restliche Verweildauer des \Gls{Gast}es verfügbar sind, zusammen mit einer Warnung aus.
-			\item Der \Gls{Rezeptionist} wählt eines dieser Zimmer aus, und verhandelt falls notwendig mit dem \Gls{Gast} neue Konditionen aus.
+			\item Der \Gls{Rezeptionist} wählt eines dieser \Gls{Zimmer} aus, und verhandelt falls notwendig mit dem \Gls{Gast} neue Konditionen aus.
 			\item \emph{weiter mit Basisablauf Punkt 7}
 		\end{longenum}
 		\item Es sind überhaupt keine \Gls{Zimmer} mehr frei:
@@ -64,8 +64,9 @@ Ein \Gls{Gast} äußert an der \Gls{Rezeption} den Wunsch, das \Gls{Zimmer} zu w
 \end{longenum}
 
 \paragraph{Besondere Anforderungen}
-
-\paragraph{Technologie und Daten Variationsliste}
+\begin{itemize}
+	\item keine
+\end{itemize}
 
 \paragraph{Benutzerfrequenz}
 selten

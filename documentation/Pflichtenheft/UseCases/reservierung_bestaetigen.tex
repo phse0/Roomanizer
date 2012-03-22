@@ -5,13 +5,13 @@ Nachdem der \Gls{Gast} seine \Gls{Reservierung} bestätigt hat, sucht der \Gls{R
 
 \paragraph{Stakeholders und Akteure}
 \begin{itemize}
-	\item \Gls{Rezeptionist} - Schnell die Reservierung bestätigen
-	\item \Gls{Gast} - Rechtlich verbindliche Zusage der Reservierung
+	\item \Gls{Rezeptionist} - Schnell die \Gls{Reservierung} bestätigen
+	\item \Gls{Gast} - Rechtlich verbindliche Zusage der \Gls{Reservierung}
 \end{itemize}
 
 \paragraph{Vorbedingung}
 \begin{itemize}
-	\item Die Reservierung muss bereits existieren
+	\item Die \Gls{Reservierung} muss bereits existieren
 \end{itemize}
 
 \paragraph{Nachbedingung}
@@ -23,7 +23,7 @@ Nachdem der \Gls{Gast} seine \Gls{Reservierung} bestätigt hat, sucht der \Gls{R
 \paragraph{Basisablauf}
 \begin{enumerate}
 	\item Der \Gls{Rezeptionist} sucht im System anhand der \Gls{Reservierungsnummer} die \Gls{Reservierung}.
-	\item Das System zeigt die gewünschte \Gls{Reservierung} mit einer Belegungsvorschau an.
+	\item Das System zeigt die gewünschte \Gls{Reservierung} mit einer \Gls{Belegungsvorschau} an.
 	\item Der \Gls{Rezeptionist} bestätigt die dargestellte \Gls{Reservierung}.
 	\item Das System druckt die Reservierungsbestätigung für das Hotel aus.
 	\item Das System stellt eine zweite Reservierungsbestätigung mit den Information für den \Gls{Gast} bereit.
@@ -38,19 +38,19 @@ Nachdem der \Gls{Gast} seine \Gls{Reservierung} bestätigt hat, sucht der \Gls{R
 			\item Der \Gls{Rezeptionist} sucht im System anhand alternativer Reservierungsdaten nach der \Gls{Reservierung}.
 			\item Das System gibt eine gefilterte Menge der \Gls{Reservierung}en zurück.
 			\begin{longenum}
-				\item Der \Gls{Rezeptionist} kann die gesuchte Reservierung nicht finden:
+				\item Der \Gls{Rezeptionist} kann die gesuchte \Gls{Reservierung} nicht finden:
 				\begin{longenum}
 					\item \emph{UseCase abbrechen}
 				\end{longenum}
 			\end{longenum}
-			\item Der \Gls{Rezeptionist} wählt die gewünschte Reservierung zur Bestätigung aus.
+			\item Der \Gls{Rezeptionist} wählt die gewünschte \Gls{Reservierung} zur Bestätigung aus.
 			\item \emph{weiter mit Basisablauf Punkt 2}
 		\end{longenum}
 	\end{longenum}
 	\item
 	\item
 	\begin{longenum}
-		\item Der \Gls{Rezeptionist} hat nicht die notwendigen Berechtigungen um die Reservierung zu bearbeiten.
+		\item Der \Gls{Rezeptionist} hat nicht die notwendigen Berechtigungen um die \Gls{Reservierung} zu bearbeiten.
 		\begin{longenum}
 			\item \emph{UseCase abbrechen}
 		\end{longenum}
@@ -60,8 +60,9 @@ Nachdem der \Gls{Gast} seine \Gls{Reservierung} bestätigt hat, sucht der \Gls{R
 \end{longenum}
 
 \paragraph{Besondere Anforderungen}
-
-\paragraph{Technologie und Daten Variationsliste}
+\begin{itemize}
+	\item keine
+\end{itemize}
 
 \paragraph{Benutzerfrequenz}
 sehr hoch
