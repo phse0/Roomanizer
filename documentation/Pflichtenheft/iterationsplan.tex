@@ -1,39 +1,61 @@
 \subsection{Ranking der Usecases}
+Zuerst eine Liste der UseCases und deren Nummer:
+\newline \newline
+\begin{tabular} { |c | l |}
+	\hline
+	\# & Name des Usecases \\
+	1 & Checkout\\
+	2 & Checkin - Reservierung\\
+	3 & Reservierung aufnahmen - Individualgast\\
+	4 & Checkin - Walkin\\
+	5 & Checkin - Reisegruppe\\
+	6 & Reservierung aufnehmen - Reisebüro\\
+	7 & Reservierung aufnehmen - Firmen\\
+	8 & Reservierung bestätigen\\
+	9 & Aufenthalt verlängern\\
+	10 & Reservierung stornieren - Vertragspartner\\
+	11 & Reservierung stornieren - Individualgast\\
+	12 & Zimmer wechseln\\
+	13 & Reservierung ändern\\
+	\hline
+\end{tabular}
 
-\begin{tabular} { l c c c c c c c c }
+\vspace{1cm}
 
-	Name des Usecases & Risiko & Komplexität & Anforderungen & Team Knowhow & Technologie& Architekturrelevanz & Benutzerrelevanz & Gesamt \\
-	Checkout & 5,25 & 8 & 3 & 5 & 5 & 9 & 10 & 6,0625 \\
-	Checkin - Reservierung & 4,25 & 7 & 3 & 2 & 5 & 9 & 10 & 5,8125 \\
-	Reservierung aufnahmen - Individualgast & 4 & 7 & 2 & 2 & 5 & 8 & 10 & 5,5 \\
-	Checkin - Walkin & 4,5 & 6 & 4 & 3 & 5 & 8 & 8 & 5,125 \\
-	Checkin - Reisegruppe & 5,5 & 8 & 5 & 4 & 5 & 7 & 8 & 5,125 \\
-	Reservierung aufnehmen - Reisebüro & 4,75 & 5 & 5 & 4 & 5 & 7 & 5 & 4,1875 \\
-	Reservierung aufnehmen - Firmen & 4,5 & 5 & 5 & 3 & 5 & 7 & 5 & 4,125 \\
-	Reservierung bestätigen & 3 & 3 & 2 & 2 & 5 & 4 & 9 & 4 \\
-	Aufenthalt verlängern & 4 & 7 & 2 & 2 & 5 & 3 & 5 & 3 \\
-	Reservierung stornieren - Vertragspartner & 4,75 & 5 & 5 & 4 & 5 & 5 & 2 & 2,9375 \\
-	Reservierung stornieren - Individualgast & 4,75 & 6 & 4 & 4 & 5 & 4 & 2 & 2,6875 \\
-	Zimmer wechseln & 3,5 & 5 & 2 & 2 & 5 & 3 & 4 & 2,625 \\
-	Reservierung ändern & 3 & 5 & 1 & 1 & 5 & 3 & 4 & 2,5 \\
-	
+Hier das Ranking der einzelnen Usecases:
+\vspace{1cm}
+
+\begin{tabular} { | l | c c c c c c c c c c c c c | }
+	\hline
+	Name des Usecases & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 \\ \hline
+	Risiko & 5,25 &	4,25 & 4 & 4,5 & 5,5 & 4,75 & 4,5 & 3 & 4 & 4,75 & 4,75 & 3,5 & 3\\
+	Komplexität & 8 & 7 & 7 & 6 & 8 & 5 & 5 & 3 & 7 & 5 & 6 & 5 & 5\\
+	Anforderungen & 3 & 3 & 2 & 4 & 5 & 5 & 5 & 2 & 2 & 5 & 4 & 2 & 1\\
+	Team Knowhow & 5 & 2 & 2 & 3 & 4 & 4 & 3 & 2 & 2 & 4 & 4 & 2 & 1\\
+	Technologie & 5 & 5 & 5 & 5 & 5 & 5 & 5 & 5  & 5 & 5 & 5 & 5 & 5\\
+	\hline
+	Architekturrelevanz	& 9 & 9 & 8 & 8 & 7 & 7 & 7 & 4 & 3 & 5 & 4 & 3 & 3\\
+	Benutzerrelevanz & 10 & 10 & 10 & 8 & 8 & 5 & 5 & 9 & 5 & 2 & 2 & 4 & 4 \\
+	\hline \hline
+	Gesamt & 6 & 5,8 & 5,5 & 5,1 & 5,1 & 4,2 & 4,1 & 4 & 3 & 3 & 2,7 & 2,6 & 2,5\\
+\hline
 \end{tabular}
 
 
 
 \subsection{Überblick}
-Zuerst wird der Usecase \textbf{Checkin - Reservierung} implementiert, welcher Stammdaten von Gästen und von Zimmern vorraussetzt.
-Aus diesen Reservierungen werden dann Aufenthalte, welche in der Timebox 2 mit dem Usecase \textbf{Checkout} beendet werden können.
+Zuerst wird der Usecase Checkin - Reservierung (\ref{UseCase_CheckinReservierung}) implementiert, welcher Stammdaten von Gästen und von Zimmern vorraussetzt.
+Aus diesen Reservierungen werden dann Aufenthalte, welche in der Timebox 2 mit dem Usecase Checkout (\ref{UseCase_Checkout}) beendet werden können.
 Außerdem wird in der zweiten Timebox die Möglichkeit geschaffen, neue \Gls{Reservierung}en von Individualpersonen zu erzeugen und außerdem
 das Kunden ohne vorherige \Gls{Reservierung} einfach ins Hotel kommen können und ein freies Zimmer zu beziehen.
 Schlussendlich wird nach der dritten Timebox die Bestätigung von Reservierungen mit dem System möglich sein.
 
 \subsection{Timebox 1}
-In der ersten Timebox beginnen wir mit der Implementierung des Usecases \textbf{Checkin - Reservierung} inklusive der benötigten Architektur,
+In der ersten Timebox beginnen wir mit der Implementierung des Usecases Checkin - Reservierung (\ref{UseCase_CheckinReservierung}) inklusive der benötigten Architektur,
 um eine vorhandene Reservierung zu finden und diese zu Bestätigen.
 
 \subsubsection{Usecases}
-In der ersten Timebox wird das Main Success Szenario des Usecases \textbf{Checkin - Reservierung} implementiert,
+In der ersten Timebox wird das Main Success Szenario des Usecases Checkin - Reservierung (\ref{UseCase_CheckinReservierung}) implementiert,
 inklusive der folgenden Extensions:
 
 \begin{itemize}
@@ -42,14 +64,19 @@ inklusive der folgenden Extensions:
 	\item Die Daten der \Gls{Reservierung} sind nicht vollständig
 \end{itemize}
 \subsubsection{Architektur}
-Die folgende Architektur wird dafür entwickelt:
+Die folgende Architektur wird in der ersten Timebox realisiert:
 
 \begin{itemize}
-	\item Ändern der Stammdaten eines Gastes
-	\item Eine Reservierung suchen
-	\item Vorschlag von \Gls{Zimmer}n in der Kategorie, welche in der \Gls{Reservierung} steht.
+	\item Das komplette Datenbank-Schema
+	\item Folgende Oberflächen:
+	\begin{itemize}
+		\item Reservierungen im System suchen
+		\item Ankunft eines \Gls{Kunde}n eintragen
+		\item Ändern der Daten eines \Gls{Gast}es
+	\end{itemize}
 \end{itemize}
 \subsubsection{Deliverables}
+
 \subsubsection{Abhängigkeiten}
 Gegeben müssen folgende Dinge sein:
 
@@ -66,24 +93,31 @@ Nach Ende der Timebox 2 kann das System die wichtigsten Szenarien im Hotelbetrie
 In der Timebox 2 werden die Main Success Szenarios der folgenden Usecases implementiert:
 
 \begin{itemize}
-	\item Checkout inklusive folgender Extension:
+	\item Checkout (\ref{UseCase_Checkout}) inklusive folgender Extension:
 	\begin{itemize}
-		\item Der \Gls{Gast} kennt seine Gls{Zimmernummer} nicht.
+		\item Der \Gls{Gast} kennt seine \Gls{Zimmernummer} nicht.
 	\end{itemize}
-	\item Reservierung aufnehmen - Individualgast
-	\item Checkin - Walkin
+	\item Reservierung aufnehmen - Individualgast (\ref{UseCase_ReservierungAufnehmenIndividualgast})
+	\item Checkin - Walkin (\ref{UseCase_CheckinWalkin})
 \end{itemize}
+
 \subsubsection{Architektur}
 Folgende Dinge werden im Zuge der Ausarbeitung implementiert:
 
 \begin{itemize}
-	\item Stammdaten eines neuen \Gls{Gast}es in das System einpflegen.
-	\item Das System kann Zwischenrechnungen bzw. Rechnung erstellen.
+	\item Code, um eine \Gls{Reservierung}svorschau zu erstellen
+	\item Folgende Oberflächen:
+	\begin{itemize}
+		\item Stammdaten eines neuen \Gls{Gast}es in das System einpflegen.
+		\item Eine \Gls{Reservierung}svorschau anzeigen lassen.
+		\item Eine neue \Gls{Reservierung} erstellen.
+		\item Möglichkeit zur Erstellung von Zwischenrechnungen bzw. \Gls{Rechnung}.
+	\end{itemize}
 \end{itemize}
 
 \subsubsection{Deliverables}
 \subsubsection{Abhängigkeiten}
-Um mit der Timebox 2 zu beginnen, muss zumindest das Main Success Szenario des Usecases \textbf{Checkin - Reservierung} aus der ersten Timebox funktionstüchtig sein
+Um mit der Timebox 2 zu beginnen, muss zumindest das Main Success Szenario des Usecases Checkin - Reservierung (\ref{UseCase_CheckinReservierung}) aus der ersten Timebox funktionstüchtig sein
 und die selben Abhängigkeiten wie in der ersten Timebox erfüllt sein.
 
 
@@ -94,8 +128,8 @@ In der dritten Timebox werden schlussendlich noch 2 Usecases implementiert, soda
 In der Timebox 3 werden die Main Success Szenarios der folgenden Usecases implementiert:
 
 \begin{itemize}
-	\item Reservierung bestätigen
-	\item Reservierung Stornieren - Individualperson inklusive folgender Extensions:
+	\item \Gls{Reservierung} bestätigen
+	\item \Gls{Reservierung} Stornieren - Individualperson inklusive folgender Extensions:
 	\begin{itemize}
 		\item Der \Gls{Gast} kennt seine \Gls{Reservierungsnummer} nicht.
 		\item Der \Gls{Gast} will die Reservierung zwischen 28 und 15 Tagen vor Ankunft die Reservierung stornieren.
@@ -103,7 +137,14 @@ In der Timebox 3 werden die Main Success Szenarios der folgenden Usecases implem
 	\end{itemize}
 \end{itemize}
 \subsubsection{Architektur}
-Im System wird eine Möglichkeit hinzugefügt, um eine \Gls{Reservierung} bestätigen bzw stornieren zu können.
+\begin{itemize}
+	\item Code, welcher die bereits Angefallenen Kosten der Reservierung berechnet.
+	\item Folgende Oberflächen:
+	\begin{itemize}
+		\item Reservierung bestätigen
+		\item Eine Reservierung stornieren
+	\end{itemize}
+\end{itemize}
 \subsubsection{Deliverables}
 \subsubsection{Abhängigkeiten}
-Damit die dritte Timebox realisiert werden kann, muss der Usecase \textbf{Reservierung aufnehmen - Individualgast} aus der zweiten Timebox funktionieren.
+Damit die dritte Timebox realisiert werden kann, muss der Usecase Reservierung aufnehmen - Individualgast (\ref{UseCase_ReservierungAufnehmenIndividualgast}) aus der zweiten Timebox funktionieren.
