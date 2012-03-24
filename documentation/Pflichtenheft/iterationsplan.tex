@@ -70,19 +70,34 @@ Die folgende Architektur wird in der ersten Timebox realisiert:
 	\item Das komplette Datenbank-Schema
 	\item Folgende Oberflächen:
 	\begin{itemize}
-		\item Reservierungen im System suchen
+		\item \Gls{Reservierung}en im System suchen
 		\item Ankunft eines \Gls{Kunde}n eintragen
 		\item Ändern der Daten eines \Gls{Gast}es
 	\end{itemize}
 \end{itemize}
 \subsubsection{Deliverables}
+\begin{itemize}
+	\item Das komplette Datenbank-Schema.
+	\item Testdaten/-ergebnisse
+	\begin{itemize}
+		\item Vermerk, dass der \Gls{Gast} im Hotel ist.
+		\item Der Zimmerstatus ist auf "Belegt" gesetzt.
+	\end{itemize}
+
+	\item Folgende Code-Teile:
+	\begin{itemize}
+		\item \Gls{Reservierung}en im System suchen
+		\item Zimmerstatus ändern
+		\item Anwesenheit des \Gls{Gast}es eintragen
+	\end{itemize}
+\end{itemize}
 
 \subsubsection{Abhängigkeiten}
 Gegeben müssen folgende Dinge sein:
 
 \begin{itemize}
-	\item Die Stammdaten der Zimmer sind im System vorhanden.
-	\item Bestätigte Reservierungen sind bereits im System vorhanden.
+	\item Die \Gls{Stammdaten} der \Gls{Zimmer} sind im System vorhanden.
+	\item Bestätigte \Gls{Reservierung}en sind bereits im System vorhanden.
 \end{itemize}
 
 \subsection{Timebox 2}
@@ -116,6 +131,21 @@ Folgende Dinge werden im Zuge der Ausarbeitung implementiert:
 \end{itemize}
 
 \subsubsection{Deliverables}
+\begin{itemize}
+	\item Testdaten/-ergebnisse:
+	\begin{itemize}
+		\item Ausgedruckte (Zwischen-) \Gls{Rechnung}
+		\item \Gls{Reservierung}svorschau
+	\end{itemize}
+
+	\item Folgende Code-Teile:
+	\begin{itemize}
+		\item (Zwischen-) \Gls{Rechnung} erstellen.
+		\item \Gls{Stammdaten} der Gäste verwalten.
+		\item \Gls{Reservierung} erstellen.
+	\end{itemize}
+\end{itemize}
+
 \subsubsection{Abhängigkeiten}
 Um mit der Timebox 2 zu beginnen, muss zumindest das Main Success Szenario des Usecases Checkin - Reservierung (\ref{UseCase_CheckinReservierung}) aus der ersten Timebox funktionstüchtig sein
 und die selben Abhängigkeiten wie in der ersten Timebox erfüllt sein.
@@ -138,13 +168,26 @@ In der Timebox 3 werden die Main Success Szenarios der folgenden Usecases implem
 \end{itemize}
 \subsubsection{Architektur}
 \begin{itemize}
-	\item Code, welcher die bereits Angefallenen Kosten der Reservierung berechnet.
+	\item Code, welcher die bereits Angefallenen Kosten der \Gls{Reservierung} berechnet.
 	\item Folgende Oberflächen:
 	\begin{itemize}
-		\item Reservierung bestätigen
-		\item Eine Reservierung stornieren
+		\item \Gls{Reservierung} bestätigen
+		\item Eine \Gls{Reservierung} stornieren
 	\end{itemize}
 \end{itemize}
 \subsubsection{Deliverables}
+\begin{itemize}
+	\item Testdaten/-ergebnisse:
+	\begin{itemize}
+		\item Stornierte \Gls{Reservierung}
+		\item Bestätigte \Gls{Reservierung}
+	\end{itemize}
+	\item Folgende Code-Teile:
+	\begin{itemize}
+		\item Bestätigen einer \Gls{Reservierung}
+		\item Stornieren einer \Gls{Reservierung}
+	\end{itemize}
+\end{itemize}
+
 \subsubsection{Abhängigkeiten}
 Damit die dritte Timebox realisiert werden kann, muss der Usecase Reservierung aufnehmen - Individualgast (\ref{UseCase_ReservierungAufnehmenIndividualgast}) aus der zweiten Timebox funktionieren.
