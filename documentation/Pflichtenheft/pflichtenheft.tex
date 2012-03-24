@@ -47,7 +47,7 @@
 \newpage
 \section{Einführung}
 \subsection{System}
-Das Pflichtenheft beschreibt ein EDV - System für ein Hotel(Roomanizer), welches 
+Das Pflichtenheft beschreibt ein EDV - System für ein Hotel, genannt Roomanizer, welches 
 folgende Funktion anbietet:
 \begin{itemize}
 	\item \Gls{Reservierung}
@@ -59,11 +59,15 @@ folgende Funktion anbietet:
 	\item Protokollierung
 	\item Statistiken
 \end{itemize}
+Das System soll die \Gls{Mitarbeiter} des Hotels bei der Verwaltung unterstützen. Dabei ist vorerst vorgesehen, dass das System wirklich nur von den \Gls{Mitarbeiter}n bedient wird.
 \subsection{Zweck}
-Das Pflichtenheft beschreibt alle Anforderung welche im Roomanizer enthalten sein müssen. Bei Fertigstellung des Systems wird jede hier definierte Anforderung von der Software bereitgestellt.
+Das Pflichtenheft beschreibt zuerst die Stakeholder, welche zufrieden zu stellen sind, die angestrebten Eigenschaften der Software, sowie das Domänenmodell, welches die Software darzustellen zu versucht. 
+
+Außerdem werden die UseCases, die im Zusammenspiel der Benutzer mit dem System auftreten, genauer beschrieben, als auch die nicht-funktionalen Anforderungen, die an das System gestellt werden.
+
+In diesem Dokument werden alle notwendigen Anforderung beschrieben. Bei Fertigstellung des Systems wird jede hier definierte Anforderung von der Software bereitgestellt.
 \subsection{Umfang}
-Das Pfichtenheft umfasst alle Arbeitsprozesse welche vom System unterstützt werden. 
-Die Arbeitsprozesse sind in zwei Gruppen eingeordnet:
+Das Pfichtenheft umfasst alle Arbeitsprozesse welche vom System unterstützt, und von der Domäne benötigt werden. Die Arbeitsprozesse sind in zwei Gruppen eingeordnet:
 \begin{enumerate}
 \item \Gls{Frontoffice}, das sind alle Abläufe die direkt an der \Gls{Rezeption} mit dem \Gls{Gast} stattfinden.
 \item \Gls{Backoffice}, es umfasst alle Abläufe die nicht direkt mit dem physischen \Gls{Gast} zu tun haben.
@@ -88,7 +92,7 @@ Dieses Dokument umfasst folgende Bereiche:
 \newpage
 
 \section{Stakeholder- und Benutzerbeschreibung}
-Stakeholders sind die Personen oder Gruppen die direkt oder indirekt Interesse am Ergebnis des Projektes haben. In diesem Abschnitt wird ein Profil, der Stakeholder und Benutzer die im Projekt involviert sind, beschrieben. Es werden nicht die spezifischen Anforderungen beschrieben, diese werden detailliert in einem anderen Kapitel behandelt. Die in folgender Tabelle beschriebenen Stakeholders bilden somit eine Basis um festzustellen welche Anforderungen berechtigt sind bzw. benötigt werden. 
+In diesem Abschnitt werden die Stakeholders, das sind die Personen oder Gruppen die direkt oder indirekt Interesse am Ergebnis des Projektes haben, genauer beschrieben. Es wird ein Profil der Stakeholder und Benutzer die im Projekt involviert sind, ausgearbeitet. Es werden nicht die spezifischen Anforderungen beschrieben, diese werden detailliert in einem anderen Kapitel behandelt. Die in folgender Tabelle beschriebenen Stakeholders bilden somit eine Basis um festzustellen welche Anforderungen berechtigt sind bzw. benötigt werden. 
 \subsection{Stakeholder\slash{}Benutzer Zusammenfassung}
 \subsubsection{Geschäftsführer}
 \begin{tabular}[t]{|p{5cm}|p{5cm}|}
@@ -177,6 +181,7 @@ Die Benutzerumgebung ist in \Gls{Frontoffice} und \Gls{Backoffice} unterteilt. D
 \newpage
 
 \section{Produkt Überblick}
+Dieses Kapitel beschreibt die Fähigkeiten und Eigenschaft der Software genauer. Nach einem kurzen Überblick werden die einzelnen Punkte noch näher durchleuchtet.
 \subsection{Zusammenfassung Produktfähigkeiten}
 \begin{tabular}{|p{5.7cm}|p{5.7cm}|}
 	\hline
@@ -263,10 +268,18 @@ Um das System für ein möglichst breites Anwenderspektrum zugänglich zu machen
 \newpage
 
 \section{Domänenmodell}
+Hier wird versucht das System des Hotels detailliert darzustellen. Wichtig dabei ist, dass es sich nicht um einen Software-Entwurf, sondern um ein Echtwelt-Abbild handelt.
 \subsection{Überblick}
-\includegraphics[width=\linewidth]{Images/Domaenenmodell_Uebersicht.png}
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{Images/Domaenenmodell_Uebersicht.png}
+	\caption{Übersicht des Domänenmodells}
+\end{figure}
+\newpage
 \subsection{Detailliertes Modell}
-\includegraphics[width=\linewidth]{Images/Domaenenmodell.png}
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{Images/Domaenenmodell.png}
+	\caption{Detailliertes Domänenmodell}
+\end{figure}
 \subsubsection{\Gls{Gast}}
 Beim \Gls{Gast} meint man eine Person welche im Hotel Leistungen bezieht. In ihr ist unter anderem der Name und die Anschrift der Person festgehalten.
 \subsubsection{\Gls{Reservierung}}
@@ -336,10 +349,12 @@ beim normalen \Gls{Aufenthalt} inkludiert ist. Sie wird zusätzlich verrechnet.
 \input UseCases/aufenthalt_verlaengern
 \input UseCases/zimmer_wechsel
 \input UseCases/zimmerstammdaten
+\input UseCases/gaststammdaten
 
 \newpage
 
 \section{Nichtfunktionale Anforderungen}
+Dieser Abschnitt beschreibt die nichtfunktionalen Anforderugen die an die Software gestellt werden. Das heißt wir werden hier nochmals genauer auf diese Anforderungen eingehen, und beschreiben auf welche wir besonderen Fokus legen.
 \subsection{Usability}
 Natürlich wird versucht die Software selbsterklärend zu gestalten, trotzdem inkludiert das Projekt eine fortlaufende Dokumentation, sowie eine Hilfe, die die Einarbeitungszeit wesentlich verringern soll.
 
@@ -359,12 +374,17 @@ Das Verwenden einer Maus soll aber schon optional sein, da die Einstiegshürde a
 Die Software wird vom Benutzer über eine grafische Benutzeroberfläche auf handelsüblichen Desktoprechnern bedient.
 
 Das Hauptfenster soll die Grundfunktionalitäten (Reservierungen, Gäste, ...) über einzelne Reiter zur Verfügung stellen. Die Auflistung dieser Elemente erfolgt über Listen, wobei das aktuell ausgewählte Element in einer Vorschau auch editiert werden kann. Über diverse Buttons können verschiedene Aktionen gestartet werden.
-
-\includegraphics[width=\linewidth]{Images/GUI_Overview.png}
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{Images/GUI_Overview.png}
+	\caption{Übersicht Reservierungen}
+\end{figure}
 
 Als kurzes Beispiel sei hier noch ein der Umgang mit \Glspl{Reservierung} erwähnt. Wie bereits erwähnt enthält ein Tab eine Liste mit allen \Glspl{Reservierung}. Bei Auswahl einer \Gls{Reservierung} sieht man rechts eine editierbare Vorschau, und einige Buttons, mit denen man Aktionen auf Bezug des aktuell ausgewählten Element auswählen kann.
 
-\includegraphics[width=\linewidth]{Images/GUI_Dialog.png}
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{Images/GUI_Dialog.png}
+	\caption{Checkin bestätigen}
+\end{figure}
 
 Drückt man z.B. den  \Gls{Checkin}-Button, so erhält man ein Dialogfenster, in dem man eine Auflistung aller zugewiesenen \Gls{Zimmer}, und deren Preise hat. All diese Informationen können noch geändert werden, bevor man mit einem Klick die ganzen \Gls{Zimmer} vergibt.
 \subsubsection{Software Schnittstellen}
@@ -382,4 +402,8 @@ Es ist nicht vorgesehen, dass das System von jedem \Gls{Mitarbeiter} des Hotels 
 %Glossar
 \addcontentsline{toc}{section}{Glossar}
 \printglossary[title=Glossar,toctitle=GLOSSAR]
+
+\newpage
+
+\listoffigures
 \end{document}
