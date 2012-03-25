@@ -48,7 +48,7 @@
 \section{Einführung}
 \subsection{System}
 Das Pflichtenheft beschreibt ein EDV - System für ein Hotel, genannt Roomanizer, welches 
-folgende Funktion anbietet:
+folgende Funktionen anbietet:
 \begin{itemize}
 	\item \Gls{Reservierung}
 	\item \Gls{Checkin}
@@ -61,7 +61,7 @@ folgende Funktion anbietet:
 \end{itemize}
 Das System soll die \Gls{Mitarbeiter} des Hotels bei der Verwaltung unterstützen. Dabei ist vorerst vorgesehen, dass das System wirklich nur von den \Gls{Mitarbeiter}n bedient wird.
 \subsection{Zweck}
-Das Pflichtenheft beschreibt zuerst die Stakeholder, welche zufrieden zu stellen sind, die angestrebten Eigenschaften der Software, sowie das Domänenmodell, welches die Software darzustellen zu versucht. 
+Das Pflichtenheft beschreibt zuerst die Stakeholder, welche zufrieden zu stellen sind, die angestrebten Eigenschaften der Software, sowie das Domänenmodell, welches die Software darzustellen versucht. 
 
 Außerdem werden die UseCases, die im Zusammenspiel der Benutzer mit dem System auftreten, genauer beschrieben, als auch die nicht-funktionalen Anforderungen, die an das System gestellt werden.
 
@@ -92,8 +92,9 @@ Dieses Dokument umfasst folgende Bereiche:
 \newpage
 
 \section{Stakeholder- und Benutzerbeschreibung}
-In diesem Abschnitt werden die Stakeholders, das sind die Personen oder Gruppen die direkt oder indirekt Interesse am Ergebnis des Projektes haben, genauer beschrieben. Es wird ein Profil der Stakeholder und Benutzer die im Projekt involviert sind, ausgearbeitet. Es werden nicht die spezifischen Anforderungen beschrieben, diese werden detailliert in einem anderen Kapitel behandelt. Die in folgender Tabelle beschriebenen Stakeholders bilden somit eine Basis um festzustellen welche Anforderungen berechtigt sind bzw. benötigt werden. 
+In diesem Abschnitt werden die Stakeholders, das sind die Personen oder Gruppen die direkt oder indirekt Interesse am Ergebnis des Projektes haben, genauer beschrieben. Es wird ein Profil der Stakeholder und Benutzer die im Projekt involviert sind, ausgearbeitet. Es werden nicht die spezifischen Anforderungen beschrieben, diese werden detailliert in einem anderen Kapitel behandelt. Die in folgenden Tabellen beschriebenen Stakeholders bilden somit eine Basis um festzustellen welche Anforderungen berechtigt sind bzw. benötigt werden. 
 \subsection{Stakeholder\slash{}Benutzer Zusammenfassung}
+Die Stakeholder werden in verschiedenen Gruppen zusammengefasst, um ihre Rollen bzw. Funktionen und Intressen näher zu beschreiben.
 \subsubsection{Geschäftsführer}
 \begin{tabular}[t]{|p{5cm}|p{5cm}|}
     \hline
@@ -178,6 +179,8 @@ Setzt die Angaben des Auftraggebers in ein Softwareprodukt um. &
 \subsection{Benutzerumgebung}
 Die Benutzerumgebung ist in \Gls{Frontoffice} und \Gls{Backoffice} unterteilt. Der \Gls{Frontoffice}-Bereich ist der Bereich der direkt mit dem physischen \Gls{Gast} und Hotelmitarbeiter in Verbindung steht. Der \Gls{Backoffice}-Bereich ist der Bereich der nicht direkt mit dem physischen \Gls{Gast} in Verbindung steht. Die Umgebung stellt verschiedene Berechtigungen zur Verfügung. Es ist möglich dem \Gls{Mitarbeiter} bestimmte Rechte zu geben bzw. zu entziehen. Die Umgebung bietet Schnittstellen zur Finanzbuchhaltung, Verwaltung von offenen \Glspl{Rechnung} und zur Food and Beverage Verwaltung.
 
+Weiters ist zu erwähnen, dass die \Gls{Mitarbeiter} das System nur von Desktoprechnern aus verwenden.
+
 \newpage
 
 \section{Produkt Überblick}
@@ -210,7 +213,7 @@ Dieses Kapitel beschreibt die Fähigkeiten und Eigenschaft der Software genauer.
 	\\
 	\hline
 	Kontingentverwaltung für \Gls{Reisebuero} &
-	\Gls{Backoffice} kann verschiedenste Vertragskonditionen für \Gls{Reisebuero} erstellen und \Glspl{Kontingent} effektive nutzen
+	\Gls{Backoffice} kann verschiedenste Vertragskonditionen für \Gls{Reisebuero} erstellen und \Glspl{Kontingent} effektiv nutzen
 	\\
 	\hline
 	Vertragspartnerverwaltung &
@@ -233,10 +236,10 @@ Dieses Kapitel beschreibt die Fähigkeiten und Eigenschaft der Software genauer.
 
 \subsection{Produktfähigkeiten/Eigenschaften}
 \subsubsection{\Gls{Checkin}}
-Roomanizer ist in der Lage \Glspl{Checkin} schnell und zuverlässig zu verarbeiten. Der Akteur der das System bedient kann mittels  verschiedensten Suchbegriffen nach vorhandenen \Glspl{Reservierung} suchen und den \Glspl{Checkin} durchführen. Die \Gls{Reservierung} kann "`On-The-Fly"' noch geändert werden (\Glspl{Zusatzleistung} hinzufügen oder entfernen, Preis ändern, \Gls{Zimmer} ändern, usw.). Weiters kann der Akteur noch die Identität des \Gls{Gast}es mit dem System abgleichen.
+Roomanizer ist in der Lage \Glspl{Checkin} schnell und zuverlässig zu verarbeiten. Der Akteur, der das System bedient, kann mittels  verschiedensten Suchbegriffen nach vorhandenen \Glspl{Reservierung} suchen und \Glspl{Checkin} durchführen. Die \Gls{Reservierung} kann "`On-The-Fly"' noch geändert werden (\Glspl{Zusatzleistung} hinzufügen oder entfernen, Preis ändern, \Gls{Zimmer} ändern, usw.). Weiters kann der Akteur noch die Identität des \Gls{Gast}es mit dem System abgleichen.
 
 \subsubsection{\Gls{Checkout}}
-Roomanizer gestaltet den \Gls{Checkout} von einzelnen \Glspl{Gast} oder Gruppen sehr einfach. Weiters können \Gls{Checkout} durch automatische, im Vorfeld, gelegte (Zwischen-)\Glspl{Rechnung} beschleunigt werden.
+Roomanizer gestaltet den \Gls{Checkout} von einzelnen \Glspl{Gast}n oder Gruppen sehr einfach. Weiters können \Glspl{Checkout} durch automatische, im Vorfeld, gelegte (Zwischen-)\Glspl{Rechnung} beschleunigt werden.
 
 \subsubsection{\Glspl{Reservierung}}
 \Glspl{Reservierung} können mit einem \Gls{Optionsdatum} versehen werden. Weiters bleibt es dem Betrieb offen welche Daten mindestens benötigt werden um eine \Gls{Reservierung} zu machen oder zu bestätigen.
@@ -245,7 +248,7 @@ Roomanizer gestaltet den \Gls{Checkout} von einzelnen \Glspl{Gast} oder Gruppen 
 Der \Gls{Mitarbeiter} (mit entsprechender Berechtigungsstufe) wählt eine Kategorie der \Gls{Stammdaten} aus die er bearbeiten will oder in die er neue \Gls{Stammdaten} eintragen will. Eine schnelle Datenbankanbindung macht das editieren der \Gls{Stammdaten} sehr komfortabel.
 
 \subsubsection{\Gls{Aufenthalt} verlängern}
-Über die selbe Suche die der Akteur bereits aus dem \Gls{Checkin} kennt, können \Glspl{Aufenthalt} verändert werden. Auch für den Fall, dass das aktuell belegte \Gls{Zimmer} nicht weiter verfügbar ist kann man mit Roomanizer eine passende Lösung finden. 
+Über die selbe Suche die der Akteur bereits aus dem \Gls{Checkin} kennt, können \Glspl{Aufenthalt} verlängert werden. Auch für den Fall, dass das aktuell belegte \Gls{Zimmer} nicht weiter verfügbar ist kann man mit Roomanizer eine passende Lösung finden. 
 
 \subsubsection{Zimmerwechsel}
 Der Akteur wählt den aktuellen \Gls{Aufenthalt} des betreffenden \Gls{Gast}es aus und kann diesen in ein passendes \Gls{Zimmer} umbuchen. Auch eventuell nötige Kategoriewechsel, die erst mit dem \Gls{Gast} abgesprochen werden müssen, sind möglich.
@@ -262,8 +265,8 @@ Es können jederzeit Statistiken und \Glspl{Report} zu Zimmerauslastung, \Glspl{
 \subsubsection{Schnittstelle zur Buchhaltung}
 Roomanizer bietet eine Schnittstelle zu verschiedensten Typen von Buchhaltungssoftware indem Rechnungen automatisiert als .csv-Datei weitergeleitet werden.
 
-\subsection{Berechtigungssystem}
-Um das System für ein möglichst breites Anwenderspektrum zugänglich zu machen aber trotzdem gewissen Sicherheitsaspekte nicht zu vernachlässigen bietet Roomanizer ein durchgängiges Berechtigungssystem. Der Benutzer loggt sich mit seinen Benutzerdaten ein und erhält dann Zugriff auf die für ihn definierten Funktionen.
+\subsubsection{Berechtigungssystem}
+Um das System für ein möglichst breites Anwenderspektrum zugänglich zu machen, aber trotzdem gewissen Sicherheitsaspekte nicht zu vernachlässigen, bietet Roomanizer ein durchgängiges Berechtigungssystem. Der Benutzer loggt sich mit seinen Benutzerdaten ein und erhält dann Zugriff auf die für ihn definierten Funktionen.
 
 \newpage
 
@@ -281,14 +284,14 @@ Hier wird versucht das System des Hotels detailliert darzustellen. Wichtig dabei
 	\caption{Detailliertes Domänenmodell}
 \end{figure}
 \subsubsection{\Gls{Gast}}
-Beim \Gls{Gast} meint man eine Person welche im Hotel Leistungen bezieht. In ihr ist unter anderem der Name und die Anschrift der Person festgehalten.
+Der \Gls{Gast} ist eine Person, die im Hotel Leistungen bezieht. In ihr ist unter anderem der Name und die Anschrift der Person festgehalten.
 \subsubsection{\Gls{Reservierung}}
 Eine \Gls{Reservierung} besteht aus verschiedenen Reservierungspositionen, welche eine Zimmerkategorie und eine Menge enthalten. Dazu wird noch der \Gls{Kunde} gespeichert, welcher die \Gls{Reservierung} getätigt hat.
 \subsubsection{Reservierungsposition}
 Die Reservierungsposition gibt an in welcher Kategorie eine bestimmte Anzahl von
 \Gls{Zimmer}n reserviert wurde.
 \subsubsection{\Gls{Vertragspartner}}
-Beim \Gls{Vertragspartner} handelt es sich um eine spezielle Form eines \Gls{Kunde}n.
+Beim \Gls{Vertragspartner} handelt es sich um eine spezielle Form eines \Glspl{Kunde}.
 Er hat einen Vertrag mit dem Hotel abgeschlossen und erhält spezielle Konditionen. Die \Gls{Vertragspartner} werden unterteilt in Firmen und \Glspl{Reisebuero}.
 \subsubsection{Firma}
 Eine Firma ist ein spezieller \Gls{Vertragspartner}, sie erhält spezielle Konditionen
@@ -312,9 +315,9 @@ nur eine bestimmte Anzahl von \Gls{Zimmer}n vorhanden, welche auch einen Preis
 zugewiesen haben.
 \subsubsection{\Gls{Kunde}}
 Der \Gls{Kunde} ist die Instanz die in direkten Zusammenhang mit einer Rechnung steht.
-Einem \Gls{Kunde}n ist eindeutig eine \Gls{Rechnung} zuzuordnen.
+Jede \Gls{Rechnung} ist einem \Gls{Kunde}n eindeutig zugeordnet.
 \subsubsection{\Gls{Rechnung}}
-Eine \Gls{Rechnung} wird erstellt und durch ein Zahlungsmittel beglichen, dann gilt die \Gls{Rechnung} als abgeschlossen. Eine \Gls{Rechnung} hat folgende Bestandteile.
+Eine \Gls{Rechnung} wird vom System üblicherweiße vor Abreise des \Gls{Gast}es erstellt. Nachdem der \Gls{Kunde} die Rechnung bezahlt halt, gilt sie als abgeschlossen.
 \subsubsection{Rechnungsposition}
 Die Rechnungsposition enthält die Anzahl einer bestimmten \Gls{Zusatzleistung} oder
 eines Aufenthaltes. Sie wird in einer \Gls{Rechnung} aufgelistet.
@@ -322,11 +325,10 @@ eines Aufenthaltes. Sie wird in einer \Gls{Rechnung} aufgelistet.
 Der Preis gibt an wie viel ein \Gls{Zimmer} in einer bestimmten Kategorie kostet. Er
 ist unter anderem abhängig von der \Gls{Saison}.
 \subsubsection{\Gls{Saison}}
-Da es verschiedene \Glspl{Saison} im Jahr gibt, wird mit dieser \Gls{Saison} angegeben
-welcher Einfluss auf den Preis etc genommen wird. 
+Da die verschiedenen \Glspl{Saison} einige Einflüsse auf das System ausüben, werden auch diese verwaltet.
 \subsubsection{\Gls{Aufenthalt}}
-Der \Gls{Aufenthalt} gibt an welchee \Glspl{Gast} welche \Gls{Zimmer} haben.
-Außerdem wird dem \Gls{Aufenthalt} die \Glspl{Zusatzleistung} zugewiesen. Der \Gls{Aufenthalt} ist auch eine eigene Rechnungsposition.
+Der \Gls{Aufenthalt} gibt an welche \Glspl{Gast} welche \Gls{Zimmer} haben.
+Außerdem werden dem \Gls{Aufenthalt} die \Glspl{Zusatzleistung} zugewiesen. Der \Gls{Aufenthalt} ist auch eine eigene Rechnungsposition.
 \subsubsection{\Gls{Zusatzleistung}}
 Bei einer \Gls{Zusatzleistung} handelt es sich um eine bestimmte Leistung welche nicht
 beim normalen \Gls{Aufenthalt} inkludiert ist. Sie wird zusätzlich verrechnet.
