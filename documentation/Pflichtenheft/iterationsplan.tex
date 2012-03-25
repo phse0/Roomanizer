@@ -44,22 +44,22 @@ Hier das Ranking der einzelnen Usecases:
 
 
 \subsection{Überblick}
-Zuerst wird der Usecase Checkin - Reservierung (\ref{UseCase_CheckinReservierung}) implementiert, welcher Stammdaten von Gästen und von Zimmern vorraussetzt.
-Aus diesen Reservierungen werden dann Aufenthalte, welche in der Timebox 2 mit dem Usecase Checkout (\ref{UseCase_Checkout}) beendet werden können.
-Außerdem wird in der zweiten Timebox die Möglichkeit geschaffen, neue \Gls{Reservierung}en von Individualpersonen zu erzeugen und außerdem
-das Kunden ohne vorherige \Gls{Reservierung} einfach ins Hotel kommen können und ein freies Zimmer zu beziehen.
-Schlussendlich wird nach der dritten Timebox die Bestätigung von Reservierungen mit dem System möglich sein.
+Zuerst wird der Usecase Checkin - Reservierung (\ref{UseCase_CheckinReservierung}) implementiert, welcher \Gls{Stammdaten} von Gästen und von \Gls{Zimmer}n vorraussetzt.
+Aus diesen \Gls{Reservierung}en werden dann \Gls{Aufenthalt}e, welche in der Timebox 2 mit dem Usecase Checkout (\ref{UseCase_Checkout}) beendet werden können.
+Außerdem wird in der zweiten Timebox die Möglichkeit geschaffen, neue \Gls{Reservierung}en von Individualpersonen zu erzeugen und außerdem,
+dass \Gls{Kunde}n ohne vorherige \Gls{Reservierung} einfach ins Hotel kommen können und ein freies \Gls{Zimmer} zu beziehen.
+Schlussendlich wird nach der dritten Timebox die Bestätigung von \Gls{Reservierung}en mit dem System möglich sein.
 
 \subsection{Timebox 1}
 In der ersten Timebox beginnen wir mit der Implementierung des Usecases Checkin - Reservierung (\ref{UseCase_CheckinReservierung}) inklusive der benötigten Architektur,
-um eine vorhandene Reservierung zu finden und diese zu Bestätigen.
+um eine vorhandene \Gls{Reservierung} zu finden und diese zu Bestätigen.
 
 \subsubsection{Usecases}
 In der ersten Timebox wird das Main Success Szenario des Usecases Checkin - Reservierung (\ref{UseCase_CheckinReservierung}) implementiert,
 inklusive der folgenden Extensions:
 
 \begin{itemize}
-	\item Der \Gls{Kunde} kennt ihre \Gls{Reservierungsnummer} nicht
+	\item Der \Gls{Kunde} kennt seine \Gls{Reservierungsnummer} nicht
 	\item Die \Gls{Reservierungsnummer} existiert nicht
 	\item Die Daten der \Gls{Reservierung} sind nicht vollständig
 \end{itemize}
@@ -72,12 +72,12 @@ Die folgende Architektur wird in der ersten Timebox realisiert:
 	\begin{itemize}
 		\item \Gls{Reservierung}en im System suchen
 		\item Ankunft eines \Gls{Kunde}n eintragen
-		\item Ändern der Daten eines \Gls{Gast}es
+		\item Ändern der \Gls{Stammdaten} eines \Gls{Gast}es
 	\end{itemize}
 \end{itemize}
 \subsubsection{Deliverables}
 \begin{itemize}
-	\item Das komplette Datenbank-Schema.
+	\item Das komplette Datenbank-Schema
 	\item Testdaten/-ergebnisse
 	\begin{itemize}
 		\item Vermerk, dass der \Gls{Gast} im Hotel ist.
@@ -123,10 +123,10 @@ Folgende Dinge werden im Zuge der Ausarbeitung implementiert:
 	\item Code, um eine \Gls{Reservierung}svorschau zu erstellen
 	\item Folgende Oberflächen:
 	\begin{itemize}
-		\item Stammdaten eines neuen \Gls{Gast}es in das System einpflegen.
+		\item \Gls{Stammdaten} eines neuen \Gls{Gast}es in das System einpflegen.
 		\item Eine \Gls{Reservierung}svorschau anzeigen lassen.
 		\item Eine neue \Gls{Reservierung} erstellen.
-		\item Möglichkeit zur Erstellung von Zwischenrechnungen bzw. \Gls{Rechnung}.
+		\item Möglichkeit zur Erstellung von (Zwischen-) \Gls{Rechnung}.
 	\end{itemize}
 \end{itemize}
 
@@ -162,13 +162,13 @@ In der Timebox 3 werden die Main Success Szenarios der folgenden Usecases implem
 	\item \Gls{Reservierung} Stornieren - Individualperson inklusive folgender Extensions:
 	\begin{itemize}
 		\item Der \Gls{Gast} kennt seine \Gls{Reservierungsnummer} nicht.
-		\item Der \Gls{Gast} will die Reservierung zwischen 28 und 15 Tagen vor Ankunft die Reservierung stornieren.
-		\item Der \Gls{Gast} will die Reservierung innerhalb von 15 Tagen vor Ankunft die Reservierung stornieren.
+		\item Der \Gls{Gast} will die Reservierung zwischen 28 und 15 Tagen vor Ankunft stornieren.
+		\item Der \Gls{Gast} will die Reservierung innerhalb von 15 Tagen vor Ankunft stornieren.
 	\end{itemize}
 \end{itemize}
 \subsubsection{Architektur}
 \begin{itemize}
-	\item Code, welcher die bereits Angefallenen Kosten der \Gls{Reservierung} berechnet.
+	\item Code, welcher die bereits angefallenen Kosten der \Gls{Reservierung} berechnet.
 	\item Folgende Oberflächen:
 	\begin{itemize}
 		\item \Gls{Reservierung} bestätigen
