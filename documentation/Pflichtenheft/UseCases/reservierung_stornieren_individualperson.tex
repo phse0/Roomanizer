@@ -2,18 +2,18 @@
 \label{UseCase_ReservierungStornierenIndividualperson}
 
 \paragraph{Kurzbeschreibung}
-Ein \Gls{Gast}, welcher eine \Gls{Reservierung} aufgegeben hat, nimmt Kontakt mit der \Gls{Rezeption} auf. Er muss seine Reservierungsdaten angeben. Daraufhin sucht der \Gls{Rezeptionist} die entsprechende \Gls{Reservierung} des \Gls{Gast}. Der \Gls{Rezeptionist} teilt dem \Gls{Gast} die laut gesetzlichen Bestimmungen bereits angefallenen Kosten mit, und die Zahlungsmodalitäten werden laut den \Gls{Stammdaten} erfassten Bedingungen festgelegt. Der \Gls{Gast} begleicht die angefallenen Kosten und der \Gls{Rezeptionist} storniert die \Gls{Reservierung}.
+Ein \Gls{Kunde}, welcher eine \Gls{Reservierung} aufgegeben hat, nimmt Kontakt mit der \Gls{Rezeption} auf. Er muss seine Reservierungsdaten angeben. Daraufhin sucht der \Gls{Rezeptionist} die entsprechende \Gls{Reservierung} des \Gls{Kunde}n. Der \Gls{Rezeptionist} teilt dem \Gls{Kunde}n die laut gesetzlichen Bestimmungen bereits angefallenen Kosten mit, und die Zahlungsmodalitäten werden laut den \Gls{Stammdaten} erfassten Bedingungen festgelegt. Der \Gls{Kunde} begleicht die angefallenen Kosten und der \Gls{Rezeptionist} storniert die \Gls{Reservierung}.
 
 \paragraph{Stakeholders und Akteure}
 \begin{itemize}
 \item \Gls{Rezeptionist} - Einfache und schnelle Stornierung von Reservierungen
-\item \Gls{Gast} - Reibungsloses stornieren von Reservierungen
+\item \Gls{Kunde} - Reibungsloses stornieren von Reservierungen
 \end{itemize}
 
 \paragraph{Vorbedingung}
 \begin{itemize}
 \item Allgemeine Vorbedingungen
-\item Es besteht eine \Gls{Reservierung} ausgestellt auf den Namen dieser Person
+\item Es besteht eine \Gls{Reservierung} ausgestellt auf den Namen des \Gls{Kunde}n.
 \end{itemize}
 
 \paragraph{Nachbedingung}
@@ -23,20 +23,20 @@ Ein \Gls{Gast}, welcher eine \Gls{Reservierung} aufgegeben hat, nimmt Kontakt mi
 
 \paragraph{Basisablauf}
 \begin{enumerate}
-\item Ein \Gls{Gast} nimmt Kontakt mit der \Gls{Rezeption} auf und gibt seine \Gls{Reservierungsnummer} an.
-\item Der \Gls{Rezeptionist} sucht im System anhand der \Gls{Reservierungsnummer} die \Gls{Reservierung} des \Gls{Gast}.
+\item Ein \Gls{Kunde} nimmt Kontakt mit der \Gls{Rezeption} auf und gibt seine \Gls{Reservierungsnummer} an.
+\item Der \Gls{Rezeptionist} sucht im System anhand der \Gls{Reservierungsnummer} die \Gls{Reservierung} des \Gls{Kunde}n.
 \item Das System zeigt die Reservierungsinformationen an.
-\item Der \Gls{Gast} will die \Gls{Reservierung} früher als 4 Wochen vor Ankunft stornieren und muss deshalb keine Kosten begleichen.
-\item Der \Gls{Rezeptionist} storniert die Reservierung des \Gls{Gast}.
+\item Der \Gls{Kunde} will die \Gls{Reservierung} früher als 4 Wochen vor Ankunft stornieren und muss deshalb keine Kosten begleichen.
+\item Der \Gls{Rezeptionist} storniert die Reservierung des \Gls{Kunde}n.
 \end{enumerate}
 
 \paragraph{Alternativer Ablauf}
 \begin{longenum}
 	\item
 	\begin{longenum}
-		\item Der \Gls{Gast} kennt seine \Gls{Reservierungsnummer} nicht:
+		\item Der \Gls{Kunde} kennt seine \Gls{Reservierungsnummer} nicht:
 		\begin{longenum}
-			\item Der \Gls{Gast} gibt stattdessen seinen Namen an.
+			\item Der \Gls{Kunde} gibt stattdessen seinen Namen an.
 			\item Der \Gls{Rezeptionist} sucht die \Gls{Reservierung} im System anhand des Namens.
 			\begin{longenum}
 				\item Das System findet keine \Gls{Reservierung} mit dem angegebenem Namen:
@@ -52,14 +52,14 @@ Ein \Gls{Gast}, welcher eine \Gls{Reservierung} aufgegeben hat, nimmt Kontakt mi
 	\item
 	\item
 	\begin{longenum}
-		\item Der \Gls{Gast} will die \Gls{Reservierung} zwischen 28 und 15 Tagen vor Ankunft stornieren:
+		\item Der \Gls{Kunde} will die \Gls{Reservierung} zwischen 28 und 15 Tagen vor Ankunft stornieren:
 		\begin{longenum}
-			\item Der \Gls{Gast} ist verpflichtet, 30\% vom Betrag zu bezahlen.
+			\item Der \Gls{Kunde} ist verpflichtet, 30\% vom Betrag zu bezahlen.
 			\item \emph{weiter mit Basisablauf Punkt 5}
 		\end{longenum}
-		\item Der \Gls{Gast} will die \Gls{Reservierung} innerhalb von 15 Tagen vor Ankunft stornieren:
+		\item Der \Gls{Kunde} will die \Gls{Reservierung} innerhalb von 15 Tagen vor Ankunft stornieren:
 		\begin{longenum}
-			\item Der \Gls{Gast} muss die erste Nacht komplett bezahlen.
+			\item Der \Gls{Kunde} muss die erste Nacht komplett bezahlen.
 			\item \emph{weiter mit Basisablauf Punkt 5}
 		\end{longenum}
 	\end{longenum}
