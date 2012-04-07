@@ -25,20 +25,28 @@ public class Tabs extends Composite {
 	}
 
 	private void createTabs() {
-		CTabFolder tabFolder = new CTabFolder(this,SWT.None);
-		tabFolder.setSimple(false);
+		/**
+		 * Creating a tabmenu
+		 */
+		CTabFolder tabMenu = new CTabFolder(this,SWT.None);
+		tabMenu.setSimple(false);
 		
-		tabFolder.setSelectionBackground(new Color[] {
+		tabMenu.setSelectionBackground(new Color[] {
         display.getSystemColor(SWT.COLOR_WHITE),
         display.getSystemColor(SWT.COLOR_WHITE),
         display.getSystemColor(SWT.COLOR_WHITE) }, new int[] { 80, 100 });
 
-		CTabItem tb_itemDB = new CTabItem(tabFolder, SWT.NONE);
+		/**
+		 * Creating the tab items
+		 * Composites are added to the tab items
+		 * tabMenu is the parent for the Composites
+		 */
+		CTabItem tb_itemDB = new CTabItem(tabMenu, SWT.NONE);
 		tb_itemDB.setText("Dashboard");
-		Dashboard db = new Dashboard(tabFolder, SWT.NONE);
+		Dashboard db = new Dashboard(tabMenu, SWT.NONE);
 		tb_itemDB.setControl(db);
 
-		CTabItem tb_itemRV = new CTabItem(tabFolder, SWT.NONE);
+		CTabItem tb_itemRV = new CTabItem(tabMenu, SWT.NONE);
 		tb_itemRV.setText("Reservator");
 	}
 }

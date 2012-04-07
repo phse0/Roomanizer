@@ -12,18 +12,16 @@ public class Dashboard extends Composite{
 	public Dashboard(Composite parent, int style) {		
 		super(parent, style);
 		
-		/*
 		GridLayout layout = new GridLayout();
 	    layout.numColumns = 3;
 	    layout.makeColumnsEqualWidth = true;
 	    this.setLayout(layout);
-	    */
-		
+
 		initUI();
 	}
 
 	private void initUI() {
-		
+		HotelInfo hotelinfo = new HotelInfo(this, SWT.NONE);
 	}
 	
 }
