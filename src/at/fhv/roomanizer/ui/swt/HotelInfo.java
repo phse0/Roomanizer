@@ -33,7 +33,7 @@ public class HotelInfo extends Composite{
 		
 		// Hotelname
 		Label name = new Label(this, SWT.NONE);
-		name.setText("Name");
+		name.setText("Name:");
 		Text text = new Text(this,SWT.READ_ONLY | SWT.BORDER);
 		text.setText("Mustername");
 		
@@ -60,8 +60,6 @@ public class HotelInfo extends Composite{
 		hp.setText("Homepage:");
 		text = new Text(this,SWT.READ_ONLY | SWT.BORDER);
 		text.setText("www.roomanizer.at");
-		
-		
 	}
 
 }

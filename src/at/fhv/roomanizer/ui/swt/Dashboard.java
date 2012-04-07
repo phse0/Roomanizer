@@ -33,6 +33,9 @@ public class Dashboard extends Composite{
 		
 		GuestInfo guestinfo = new GuestInfo(this, SWT.NONE);
 		guestinfo.setLayoutData(new GridData(GridData.VERTICAL_ALIGN_BEGINNING));
+		
+		HotelStats hotelstats = new HotelStats(this, SWT.NONE);
+		hotelstats.setLayoutData(new GridData(GridData.VERTICAL_ALIGN_BEGINNING));
 	}
 	
 }
