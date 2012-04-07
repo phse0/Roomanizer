@@ -40,12 +40,17 @@ public class Tabs extends Composite {
 		 * Creating the tab items
 		 * Composites are added to the tab items
 		 * tabMenu is the parent for the Composites
+		 * 
+		 * Dashboard composite
 		 */
 		CTabItem tb_itemDB = new CTabItem(tabMenu, SWT.NONE);
 		tb_itemDB.setText("Dashboard");
 		Dashboard db = new Dashboard(tabMenu, SWT.NONE);
 		tb_itemDB.setControl(db);
 
+		/**
+		 * Reservator composite 
+		 */
 		CTabItem tb_itemRV = new CTabItem(tabMenu, SWT.NONE);
 		tb_itemRV.setText("Reservator");
 	}

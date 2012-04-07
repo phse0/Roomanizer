@@ -15,6 +15,7 @@ public class Dashboard extends Composite{
 		GridLayout layout = new GridLayout();
 	    layout.numColumns = 3;
 	    layout.makeColumnsEqualWidth = true;
+	    layout.verticalSpacing = 10;
 	    this.setLayout(layout);
 
 		initUI();
@@ -22,6 +23,9 @@ public class Dashboard extends Composite{
 
 	private void initUI() {
 		HotelInfo hotelinfo = new HotelInfo(this, SWT.NONE);
+		hotelinfo.setLayoutData(new GridData(GridData.VERTICAL_ALIGN_BEGINNING));
+		RoomInfo roominfo = new RoomInfo(this, SWT.NONE);
+		roominfo.setLayoutData(new GridData(GridData.VERTICAL_ALIGN_BEGINNING));
 	}
 	
 }

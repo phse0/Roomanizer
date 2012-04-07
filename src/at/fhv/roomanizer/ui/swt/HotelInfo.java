@@ -57,8 +57,8 @@ public class HotelInfo extends Composite{
 		//Website
 		Label hp = new Label(this, SWT.NONE);
 		hp.setText("Homepage:");
-		Link link = new Link(this,SWT.NONE);
-		link.setText("<A>www.roomanizer.at</A>");
+		text = new Text(this,SWT.READ_ONLY | SWT.BORDER);
+		text.setText("www.roomanizer.at");
 		
 		
 	}
