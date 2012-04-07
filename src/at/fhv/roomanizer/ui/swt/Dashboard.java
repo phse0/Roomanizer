@@ -14,18 +14,25 @@ public class Dashboard extends Composite{
 		
 		GridLayout layout = new GridLayout();
 	    layout.numColumns = 3;
-	    layout.makeColumnsEqualWidth = true;
-	    layout.verticalSpacing = 10;
+	    layout.makeColumnsEqualWidth = false;
+	  
 	    this.setLayout(layout);
 
 		initUI();
 	}
 
+	/**
+	 * Creates the parts of the Dashboard userinterface
+	 */
 	private void initUI() {
 		HotelInfo hotelinfo = new HotelInfo(this, SWT.NONE);
 		hotelinfo.setLayoutData(new GridData(GridData.VERTICAL_ALIGN_BEGINNING));
+		
 		RoomInfo roominfo = new RoomInfo(this, SWT.NONE);
 		roominfo.setLayoutData(new GridData(GridData.VERTICAL_ALIGN_BEGINNING));
+		
+		GuestInfo guestinfo = new GuestInfo(this, SWT.NONE);
+		guestinfo.setLayoutData(new GridData(GridData.VERTICAL_ALIGN_BEGINNING));
 	}
 	
 }

@@ -17,11 +17,11 @@ public class RoomInfo extends Composite {
 
 	private void initUI() {
 
-		Label hotel = new Label(this, SWT.NONE);
-		hotel.setText("Roominformation");
-		GridData data = new GridData(GridData.CENTER, GridData.CENTER, true,
-				false, 2, 1);
-		hotel.setLayoutData(data);
+		// Create Title
+		Label title = new Label(this, SWT.NONE);
+		title.setText("Roominformation");
+		GridData data = new GridData(GridData.BEGINNING, GridData.CENTER, true, false, 2, 1);
+		title.setLayoutData(data);
 
 		// Create a new label which is used as a separator
 		// Use GridData to span it over the 2 columns

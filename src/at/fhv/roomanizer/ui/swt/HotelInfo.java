@@ -18,10 +18,11 @@ public class HotelInfo extends Composite{
 
 	private void initUI() {
 		
-		Label hotel = new Label(this, SWT.NONE);
-		hotel.setText("Hotelinformation");
-		GridData data = new GridData(GridData.CENTER, GridData.CENTER, true, false, 2, 1);
-		hotel.setLayoutData(data);
+		// Create Title
+		Label title = new Label(this, SWT.NONE);
+		title.setText("Hotelinformation");
+		GridData data = new GridData(GridData.BEGINNING, GridData.CENTER, true, false, 2, 1);
+		title.setLayoutData(data);
 		
 		// Create a new label which is used as a separator
 		// Use GridData to span it over the 2 columns
@@ -30,31 +31,31 @@ public class HotelInfo extends Composite{
 		data.horizontalSpan=2;
 		separtor.setLayoutData(data);
 		
-		//Hotelname
+		// Hotelname
 		Label name = new Label(this, SWT.NONE);
 		name.setText("Name");
 		Text text = new Text(this,SWT.READ_ONLY | SWT.BORDER);
 		text.setText("Mustername");
 		
-		//Hotel Tel. Nr
+		// Hotel Tel. Nr
 		Label telNr = new Label(this, SWT.NONE);
 		telNr.setText("Tel.:");
 		text = new Text(this,SWT.READ_ONLY | SWT.BORDER);
 		text.setText("0800 / 4711 0815");
 		
-		//Street
+		// Street
 		Label street = new Label(this, SWT.NONE);
 		street.setText("Street:");
 		text = new Text(this,SWT.READ_ONLY | SWT.BORDER);
 		text.setText("Musterstra§e");
 		
-		//Number
+		// Number
 		Label number = new Label(this, SWT.NONE);
 		number.setText("Nr.:");
 		text = new Text(this,SWT.READ_ONLY | SWT.BORDER);
 		text.setText("15");
 		
-		//Website
+		// Website
 		Label hp = new Label(this, SWT.NONE);
 		hp.setText("Homepage:");
 		text = new Text(this,SWT.READ_ONLY | SWT.BORDER);
