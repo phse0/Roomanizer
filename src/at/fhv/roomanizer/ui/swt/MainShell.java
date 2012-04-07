@@ -11,7 +11,8 @@ public class MainShell {
 
 	Shell shell;
 	Tabs tabs;
-
+	
+	
 	public MainShell() {
 		
 		Display display = new Display();
@@ -22,7 +23,6 @@ public class MainShell {
 		shell = new Shell(display);
 		shell.setText("Roomanizer");
 		shell.setLayout(new FillLayout());
-		
 
 		/**
 		 * Top Menu Part

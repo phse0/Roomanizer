@@ -18,10 +18,15 @@ public class HotelInfo extends Composite{
 
 	private void initUI() {
 		
+		Label hotel = new Label(this, SWT.NONE);
+		hotel.setText("Hotelinformation");
+		GridData data = new GridData(GridData.CENTER, GridData.CENTER, true, false, 2, 1);
+		hotel.setLayoutData(data);
+		
 		// Create a new label which is used as a separator
 		// Use GridData to span it over the 2 columns
 		Label separtor = new Label(this, SWT.SEPARATOR | SWT.HORIZONTAL);
-		GridData data = new GridData(GridData.FILL, GridData.BEGINNING, true, false, 2, 1);
+		data = new GridData(GridData.FILL, GridData.BEGINNING, true, false, 2, 1);
 		data.horizontalSpan=2;
 		separtor.setLayoutData(data);
 		
