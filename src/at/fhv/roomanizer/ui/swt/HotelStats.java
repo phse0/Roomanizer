@@ -33,24 +33,28 @@ public class HotelStats extends Composite{
 		Label storno = new Label(this, SWT.NONE);
 		storno.setText("Storno percentage:");
 		Text text = new Text(this, SWT.READ_ONLY | SWT.BORDER);
+		text.setLayoutData(new GridData(GridData.HORIZONTAL_ALIGN_END));
 		text.setText("12 %");
 		
 		// Avg Stays
 		Label avgStays = new Label(this, SWT.NONE);
 		avgStays.setText("Average stay:");
 		text = new Text(this, SWT.READ_ONLY | SWT.BORDER);
+		text.setLayoutData(new GridData(GridData.HORIZONTAL_ALIGN_END));
 		text.setText("4 days");
 		
 		// Load Faktor
 		Label loadFaktor = new Label(this, SWT.NONE);
 		loadFaktor.setText("Load Faktor:");
 		text = new Text(this, SWT.READ_ONLY | SWT.BORDER);
+		text.setLayoutData(new GridData(GridData.HORIZONTAL_ALIGN_END));
 		text.setText("80 %");
 		
 		// Load Faktor
 		Label overbooking = new Label(this, SWT.NONE);
 		overbooking.setText("Overbooking:");
 		text = new Text(this, SWT.READ_ONLY | SWT.BORDER);
+		text.setLayoutData(new GridData(GridData.HORIZONTAL_ALIGN_END));
 		text.setText("5 %");
 	}
 	

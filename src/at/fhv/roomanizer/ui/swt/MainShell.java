@@ -1,7 +1,5 @@
 package at.fhv.roomanizer.ui.swt;
 
-import java.awt.GridLayout;
-
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Display;
@@ -25,6 +23,7 @@ public class MainShell {
 		shell = new Shell(display);
 		shell.setText("Roomanizer");
 		shell.setLayout(new FillLayout());
+		shell.setMinimumSize(1000, 600);
 
 		/**
 		 * Top Menu Part
