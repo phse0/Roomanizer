@@ -54,7 +54,8 @@ public class Tabs extends Composite {
 		 */
 		CTabItem tb_itemRV = new CTabItem(tabMenu, SWT.NONE);
 		tb_itemRV.setText("Reservator");
-		
+		Reservator rv = new Reservator(tabMenu, SWT.NONE);
+		tb_itemRV.setControl(rv);
 
 		/**
 		 * Explorer composite 
