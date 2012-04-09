@@ -16,7 +16,7 @@ public class ReservationTable extends Composite {
 		super(parent, style);
 		
 		data = new GridData(SWT.FILL, SWT.FILL, true, true);
-		data.heightHint = 450;
+		data.heightHint = 400;
 		this.setLayout(new GridLayout());
 		initUI();
 	}

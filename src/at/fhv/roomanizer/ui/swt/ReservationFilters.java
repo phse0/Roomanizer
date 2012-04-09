@@ -17,7 +17,7 @@ public class ReservationFilters extends Composite  {
 		
 		GridLayout layout = new GridLayout();
 	    layout.numColumns = 6;
-	    layout.makeColumnsEqualWidth = true;
+	    layout.makeColumnsEqualWidth = false;
 	  
 	    this.setLayout(layout);
 		

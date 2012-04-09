@@ -43,19 +43,19 @@ public class ReservationForm extends Composite{
 		text = new Text(this, SWT.BORDER);
 		text.setLayoutData(new GridData(GridData.FILL_HORIZONTAL));
 		
-		// Ort
+		// Zip code
 		Label zip = new Label(this, SWT.NONE);
 		zip.setText("Zip:");
 		text = new Text(this, SWT.BORDER);
 		text.setLayoutData(new GridData(GridData.FILL_HORIZONTAL));
 		
-		// Nachname
+		// Strasse
 		Label street = new Label(this, SWT.NONE);
 		street.setText("Street:");
 		text = new Text(this, SWT.BORDER);
 		text.setLayoutData(new GridData(GridData.FILL_HORIZONTAL));
 		
-		// Nr
+		//Str. Nr
 		Label nr = new Label(this, SWT.NONE);
 		nr.setText("Street:");
 		text = new Text(this, SWT.BORDER);
