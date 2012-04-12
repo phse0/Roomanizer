@@ -19,6 +19,12 @@ public class HabitationTest {
 	}
 	
 	@Test
+	public void hasDates(){
+		assertEquals("Correct start date?", new Date(2012,8,6), h.getStart());
+		assertEquals("Correct end date?", new Date(2012,8,20), h.getEnd());
+	}
+	
+	@Test
 	public void isBetween() {
 		boolean t1 = h.isBetween(new Date(2012,10,15), new Date(2012,11,1));
 		boolean t2 = h.isBetween(new Date(2012, 7,2), new Date(2012,7,16));
