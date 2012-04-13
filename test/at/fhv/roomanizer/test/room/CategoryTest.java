@@ -7,8 +7,6 @@ import java.util.Date;
 import org.junit.Before;
 import org.junit.Test;
 
-import at.fhv.roomanizer.test.Habitation;
-
 public class CategoryTest {
 	
 	private Category c;
@@ -18,7 +16,6 @@ public class CategoryTest {
 
 	@Before
 	public void setUp() throws Exception {
-		Room r;
 		Habitation h;
 		c = new Category();
 		c.setName("Testkategorie");
@@ -69,6 +66,6 @@ public class CategoryTest {
 		assertArrayEquals("Returns room2?", expected1, actual1);
 		Room[] actual2 = c.checkAvailibility(new Date(2012,8,28), new Date(2012,9,10), 1);
 		Room[] expected2 = {};
-		assertArrayEquals("Returns room2?", expected2, actual2);
+		assertArrayEquals("Returns empty array?", expected2, actual2);
 	}
 }
