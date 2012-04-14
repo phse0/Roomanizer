@@ -8,11 +8,17 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.DateTime;
+import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Text;
 
+import at.fhv.roomanizer.ui.swt.dialogs.SWTDialog;
+
 public class ReservationDetailView extends Composite {
+	
+	final SWTDialog dialog;
 
 	public ReservationDetailView(Composite parent, int style) {
 		super(parent, style);
@@ -22,6 +28,9 @@ public class ReservationDetailView extends Composite {
 	    layout.makeColumnsEqualWidth = false;
 	  
 	    this.setLayout(layout);
+	    
+	    //Create The Dialog for Create Reservation
+	    dialog = new SWTDialog(parent.getShell());
 		
 		initUI();
 	}
@@ -98,18 +107,31 @@ public class ReservationDetailView extends Composite {
 		storno.setText("Storno expiration:");
 		dateFrom = new DateTime(this, SWT.BORDER | SWT.DATE | SWT.DROP_DOWN);
 		dateFrom.setDate(2012, 0, 1);
-				
+		
 		// Check-In
 		Button submit = new Button (this, SWT.PUSH);
 		submit.setText ("Check-In");
+				
+		// Create Reservation
+		Button reservationC = new Button (this, SWT.PUSH);
+		reservationC.setText ("Create reservation");
+		
+		Listener buttonListener = new Listener() {
+		      public void handleEvent(Event event) {
+		    	  System.out.println("Test");
+		    	  dialog.open();
+		      }
+		    };
+		reservationC.addListener(SWT.Selection, buttonListener);
+		
 		
 		// Storno
 		Button stornoB = new Button (this, SWT.PUSH);
-		stornoB.setText ("Stornieren");
+		stornoB.setText ("Cancel");
 		
 		// Save
 		Button save = new Button (this, SWT.PUSH);
-		save.setText ("Speichern");
+		save.setText ("Save Changes");
 	}
 
 }
