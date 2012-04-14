@@ -27,7 +27,7 @@ public class ReservationTable extends Composite {
 		table.setLinesVisible (true);
 		table.setHeaderVisible (true);
 		table.setLayoutData(data);
-		String[] titles = {" ", "C", "!", "Description", "Resource", "In Folder", "Location"};
+		String[] titles = {"Reservation Number", "First Name", "Last Name", "Optiondate"};
 		for (int i=0; i<titles.length; i++) {
 			TableColumn column = new TableColumn (table, SWT.NONE);
 			column.setText (titles [i]);
@@ -35,13 +35,11 @@ public class ReservationTable extends Composite {
 		int count = 128;
 		for (int i=0; i<count; i++) {
 			TableItem item = new TableItem (table, SWT.NONE);
-			item.setText (0, "x");
-			item.setText (1, "y");
-			item.setText (2, "!");
-			item.setText (3, "this stuff behaves the way I expect");
-			item.setText (4, "almost everywhere");
-			item.setText (5, "some.folder");
-			item.setText (6, "line " + i + " in nowhere");
+			item.setText (0, "12345");
+			item.setText (1, "John");
+			item.setText (2, "Smith");
+			item.setText (3, "07/07/2012");
+			
 		}
 		for (int i=0; i<titles.length; i++) {
 			table.getColumn (i).pack ();

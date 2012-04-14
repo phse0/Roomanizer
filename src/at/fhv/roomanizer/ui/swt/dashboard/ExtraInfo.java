@@ -41,7 +41,7 @@ public class ExtraInfo extends Composite{
 		Label weatherforecast = new Label(this, SWT.NONE);
 		weatherforecast.setText("Weatherforecast:");
 		text = new Text(this, SWT.READ_ONLY | SWT.BORDER);
-		text.setText("Schauer morgens; max 7; min -1;");
+		text.setText("Partly sunny; max 7; min -1;");
 		text.setLayoutData(new GridData(GridData.HORIZONTAL_ALIGN_END));
 		
 		// events
