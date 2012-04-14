@@ -1,4 +1,4 @@
-package at.fhv.roomanizer.ui.swt;
+package at.fhv.roomanizer.ui.swt.dashboard;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
