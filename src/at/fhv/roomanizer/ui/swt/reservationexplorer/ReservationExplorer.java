@@ -5,8 +5,6 @@ import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 
-
-
 public class ReservationExplorer extends Composite{
 
 	public ReservationExplorer(Composite parent, int style) {

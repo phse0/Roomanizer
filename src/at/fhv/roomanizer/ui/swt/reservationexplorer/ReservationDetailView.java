@@ -1,7 +1,6 @@
 package at.fhv.roomanizer.ui.swt.reservationexplorer;
 
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
@@ -9,17 +8,15 @@ import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.DateTime;
 import org.eclipse.swt.widgets.Event;
-import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Text;
 
-import at.fhv.roomanizer.ui.swt.dialogs.ReservationDialog;
-import at.fhv.roomanizer.ui.swt.dialogs.SWTDialog;
+import at.fhv.roomanizer.ui.swt.dialogs.reservation.ReservationDialog;
 
 public class ReservationDetailView extends Composite {
 
-	ReservationDialog reservationDialog;
+	ReservationDialog _reservationDialog;
 
 	public ReservationDetailView(Composite parent, int style) {
 		super(parent, style);
@@ -31,7 +28,7 @@ public class ReservationDetailView extends Composite {
 		this.setLayout(layout);
 
 		// Creating the reservationdialog
-		reservationDialog = new ReservationDialog(parent.getShell());
+		_reservationDialog = new ReservationDialog(parent.getShell());
 
 		initUI();
 	}
@@ -118,7 +115,7 @@ public class ReservationDetailView extends Composite {
 
 		Listener buttonListener = new Listener() {
 			public void handleEvent(Event event) {
-				reservationDialog.open();
+				_reservationDialog.open();
 			}
 		};
 		reservationC.addListener(SWT.Selection, buttonListener);

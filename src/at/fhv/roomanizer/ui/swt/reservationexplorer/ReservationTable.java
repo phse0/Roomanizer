@@ -10,13 +10,13 @@ import org.eclipse.swt.widgets.TableItem;
 
 public class ReservationTable extends Composite {
 
-	GridData data;
+	GridData _data;
 	
 	public ReservationTable(Composite parent, int style) {
 		super(parent, style);
 		
-		data = new GridData(SWT.FILL, SWT.FILL, true, true);
-		data.heightHint = 400;
+		_data = new GridData(SWT.FILL, SWT.FILL, true, true);
+		_data.heightHint = 400;
 		this.setLayout(new GridLayout());
 		initUI();
 	}
@@ -26,7 +26,7 @@ public class ReservationTable extends Composite {
 		Table table = new Table (this, SWT.MULTI | SWT.BORDER | SWT.FULL_SELECTION);
 		table.setLinesVisible (true);
 		table.setHeaderVisible (true);
-		table.setLayoutData(data);
+		table.setLayoutData(_data);
 		String[] titles = {"Reservation Number", "First Name", "Last Name", "Optiondate"};
 		for (int i=0; i<titles.length; i++) {
 			TableColumn column = new TableColumn (table, SWT.NONE);

@@ -11,7 +11,8 @@ import org.eclipse.swt.widgets.Shell;
 
 public class SWTDialog extends Dialog {
 	
-	Object result;
+	Object _result;
+
 
 	public SWTDialog(Shell parent, int style) {
 		super(parent, style);
@@ -56,14 +57,14 @@ public class SWTDialog extends Dialog {
 	        }
 	      };
 	      
-	      buttonOK.addListener(SWT.Selection, listener);
-	      buttonCancel.addListener(SWT.Selection, listener);
+	    buttonOK.addListener(SWT.Selection, listener);
+	    buttonCancel.addListener(SWT.Selection, listener);
 		
 		Display display = parent.getDisplay();
 		while (!shell.isDisposed()) {
 			if (!display.readAndDispatch())
 				display.sleep();
 		}
-		return result;
+		return _result;
 	}
 }

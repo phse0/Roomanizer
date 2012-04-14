@@ -18,9 +18,8 @@ import at.fhv.roomanizer.ui.swt.reservationexplorer.ReservationExplorer;
 
 public class MainShell {
 
-	Shell shell;
-	Tabs tab;
-	
+	Shell _shell;
+	Tabs _tab;
 	
 	public MainShell() {
 		
@@ -29,25 +28,25 @@ public class MainShell {
 		/**
 		 * Setting up the main shell
 		 */
-		shell = new Shell(display);
-		shell.setText("Roomanizer");
-		shell.setLayout(new FillLayout());
-		shell.setMinimumSize(1000, 600);
+		_shell = new Shell(display);
+		_shell.setText("Roomanizer");
+		_shell.setLayout(new FillLayout());
+		_shell.setMinimumSize(1000, 600);
 
 		/**
 		 * Top Menu Part
 		 */
-	    Menu menuBar = new Menu(shell, SWT.BAR);
+	    Menu menuBar = new Menu(_shell, SWT.BAR);
 	    MenuItem fileMenuHeader = new MenuItem(menuBar, SWT.CASCADE);
 	    fileMenuHeader.setText("File");
 	    
 	    /**
 		 *Tabs Part
 		 */
-		tab = new Tabs(shell, SWT.None);
-		shell.open();
+		_tab = new Tabs(_shell, SWT.None);
+		_shell.open();
 		
-		while (!shell.isDisposed()) {
+		while (!_shell.isDisposed()) {
 			if (!display.readAndDispatch()) {
 				display.sleep();
 			}
