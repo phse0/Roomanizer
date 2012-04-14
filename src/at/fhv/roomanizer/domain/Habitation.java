@@ -71,7 +71,13 @@ public class Habitation {
 		return _end;
 	}
 
+	/**
+	 * Returns if the habitation intersects with duration spaned by the given dates
+	 * @param start The start date to check
+	 * @param end The end date to check
+	 * @return True if the dates intersect, otherwise false
+	 */
 	public boolean isBetween(Date start, Date end) {
-		return false;
+		return (_start.compareTo(end) < 0 && _end.compareTo(end) > 0) || (_start.compareTo(start) < 0 && _end.compareTo(start) > 0);
 	}
 }
