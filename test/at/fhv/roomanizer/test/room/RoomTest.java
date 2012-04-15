@@ -1,3 +1,5 @@
+package at.fhv.roomanizer.test.room;
+
 import static org.junit.Assert.*;
 
 import java.util.Date;
@@ -8,9 +10,6 @@ import org.junit.Test;
 
 import at.fhv.roomanizer.domain.Habitation;
 import at.fhv.roomanizer.domain.room.Room;
-
-
-
 
 public class RoomTest {
 
@@ -92,17 +91,9 @@ public class RoomTest {
 		assertEquals("Room id correct?", 2, r2.getId());
 	}
 	
-	/* TODO Does the room know his cateogry?
 	@Test
 	public void isCategory(){
-		assertEquals("Right category?", "Luxus", r1.getCategory());
-		assertEquals("Right category?", "Holzklasse", r2.getCategory());
-	}*/
-
-	/* TODO Status of the room will not be String...
-	@Test
-	public void checkStatus(){
-		assertEquals("Right status?", "BESETZT-UNGEREINIGT", r1.getStatus());
-		assertEquals("Right status?", "FREI-GEREINIGT", r2.getStatus());
-	}*/
+		assertSame("Right category?", c1, r1.getCategory());
+		assertSame("Right category?", c2, r2.getCategory());
+	}
 }
