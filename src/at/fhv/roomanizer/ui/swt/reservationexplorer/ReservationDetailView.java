@@ -12,11 +12,9 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Text;
 
-import at.fhv.roomanizer.ui.swt.dialogs.reservation.ReservationDialog;
 
 public class ReservationDetailView extends Composite {
 
-	ReservationDialog _reservationDialog;
 
 	public ReservationDetailView(Composite parent, int style) {
 		super(parent, style);
@@ -26,9 +24,6 @@ public class ReservationDetailView extends Composite {
 		layout.makeColumnsEqualWidth = false;
 
 		this.setLayout(layout);
-
-		// Creating the reservationdialog
-		_reservationDialog = new ReservationDialog(parent.getShell());
 
 		initUI();
 	}
@@ -115,7 +110,7 @@ public class ReservationDetailView extends Composite {
 
 		Listener buttonListener = new Listener() {
 			public void handleEvent(Event event) {
-				_reservationDialog.open();
+				
 			}
 		};
 		reservationC.addListener(SWT.Selection, buttonListener);
