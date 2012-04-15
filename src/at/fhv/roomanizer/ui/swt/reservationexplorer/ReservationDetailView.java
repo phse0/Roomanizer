@@ -1,5 +1,6 @@
 package at.fhv.roomanizer.ui.swt.reservationexplorer;
 
+import org.eclipse.jface.wizard.WizardDialog;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
@@ -10,14 +11,20 @@ import org.eclipse.swt.widgets.DateTime;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
+import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
+
+import at.fhv.roomanizer.ui.swt.wizards.ReservationWizard;
 
 
 public class ReservationDetailView extends Composite {
 
+	Composite _parent;
+	Shell _shell;
 
 	public ReservationDetailView(Composite parent, int style) {
 		super(parent, style);
+		_shell = parent.getShell();
 
 		GridLayout layout = new GridLayout();
 		layout.numColumns = 2;
@@ -110,7 +117,8 @@ public class ReservationDetailView extends Composite {
 
 		Listener buttonListener = new Listener() {
 			public void handleEvent(Event event) {
-				
+				WizardDialog dlg = new WizardDialog(_shell, new ReservationWizard());
+				dlg.open();
 			}
 		};
 		reservationC.addListener(SWT.Selection, buttonListener);

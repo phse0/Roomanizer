@@ -1,4 +1,4 @@
-package at.fhv.roomanizer.ui.swt.dialogs;
+package at.fhv.roomanizer.ui.swt.wizards;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Button;
